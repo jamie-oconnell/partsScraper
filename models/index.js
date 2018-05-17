@@ -86,7 +86,7 @@ function getJstechData() {
                                 'old_price': oldPrice,
                                 'old_price_value': oldPriceValue,
                                 'is_changed':isChanged,
-                                'diff': diff.toFixed(2)
+                                'diff': diff
                             };
 
                         });
@@ -195,7 +195,7 @@ function getJstechData() {
                                 'old_price': oldPrice,
                                 'old_price_value': oldPriceValue,
                                 'is_changed':isChanged,
-                                'diff': diff.toFixed(2)
+                                'diff': diff
                             };
 
 
@@ -368,7 +368,7 @@ function getHitechPartsData() {
                                 'old_price': oldPrice,
                                 'old_price_value': oldPriceValue,
                                 'is_changed':isChanged,
-                                'diff': diff.toFixed(2)
+                                'diff': diff
                             };
 
                         });
@@ -523,7 +523,7 @@ function getValuePartsData() {
 				'old_price': oldPrice,
 				'old_price_value': oldPriceValue,
 				'is_changed':isChanged,
-				'diff': diff.toFixed(2)
+				'diff': diff
                             };
 
                         });
