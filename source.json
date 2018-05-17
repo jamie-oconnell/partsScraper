@@ -179,13 +179,13 @@
 			"jstech_url": {"url":"samsung/galaxy-s6","path":"942_1293"}
 		},
 		"Galaxy s6 Edge":{
-			"valueparts_url":"samsung-galaxy-s6-edge",
+			"valueparts_url":"samsung-parts/samsung-galaxy-s6-edge",
 			"hitechparts_url":"samsung/s6-edge/",
 			"mobilehq" : "samsung/galaxy/g925i",
 			"jstech_url": {"url":"samsung/galaxy-s6-edge","path":"942_1300"}
 		},
 		"Galaxy s7":{
-			"valueparts_url":"samsung-galaxy-s7",
+			"valueparts_url":"samsung-parts/samsung-galaxy-s7",
 			"hitechparts_url":"samsung/s7/",
 			"mobilehq" : "samsung/galaxy/galaxy-s7",
 			"jstech_url": {"url":"samsung/galaxy-s7","path":"942_1383"}
@@ -221,7 +221,7 @@
 			"jstech_url": {"url":"samsung/galaxy-note-4","path":"942_1260"}
 		},
 		"Note 5":{
-			"valueparts_url":"samsung/samsung-note-5/",
+			"valueparts_url":"samsung-parts/samsung-note-5/",
 			"hitechparts_url":"samsung/samsung-note-5/",
 			"mobilehq" : "samsung/galaxy-note/galaxy-note-5",
 			"jstech_url": {"url":"samsung/galaxy-note-5","path":"942_1338"}
