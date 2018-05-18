@@ -7,6 +7,7 @@ const index = require('./routes/index');
 const app = express();
 
 var alldata = {};
+var sourcesData = {};
 var supplierArray = ['valueparts','hitechparts','jstech'];
 
 app.use('/', index);
@@ -14,11 +15,22 @@ app.use('/', index);
 const model = require('./models');
 app.get('/api/update', model.update);
 app.get('/api/update/:supplier', model.update);
+app.get('/api/sources', sources);
 app.get('/api/:supplier', supplier);
 app.get('/api/:supplier/:category', supplierfilter);
 app.get('/api/:supplier/:category/:id', supplierfilterspecific);
 
+fs.readFile('source.json', (err, data) => {
+    if (err) {
+        throw err;
+    }
+    sourcesData = JSON.parse(data);
+});
 
+function sources (req, res){
+    console.log("test");
+    res.send(sourcesData);
+  };
 
 fs.readFile('ValueParts.json', (err, data) => {
   if (err) {
