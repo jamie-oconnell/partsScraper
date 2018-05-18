@@ -571,7 +571,6 @@ function getValuePartsData() {
 
         fs.writeFile('ValueParts.json', JSON.stringify(alldata, null, 2), 'utf8', () => {
             console.log('Data Saved');
-            console.log(alldata)
 	    
 	    fs.writeFile('last_valueparts.json', JSON.stringify(alldata, null, 2), 'utf8', () => {
             console.log('Old Data Saved');
