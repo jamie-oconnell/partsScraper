@@ -1,230 +1,231 @@
 {
-"Iphone":{
-	"Iphone 4":{
-			"valueparts_url":"apple-iphone-parts/iphone-4-parts",
-			"hitechparts_url":"apple/iphone/iphone-4/",
-			"mobilehq_url": "apple/iphone/iphone-4",
-			"jstech_url": {"url":"for-iphone/i-phone-4","path":"952_953"}
-		   },
-	"Iphone 4s":{
-			"valueparts_url":"apple-iphone-parts/iphone-4s-parts",
-			"hitechparts_url":"apple/iphone/iphone-4s/",
-			"mobilehq_url": "apple/iphone/iphone-4s",
-			"jstech_url": {"url":"for-iphone/i-phone-4s","path":"952_1040"}
-		   },
-	"Iphone 5":{
-			"valueparts_url":"apple-iphone-parts/iphone-5-parts",
-			"hitechparts_url":"apple/iphone/iphone-5/",
-			"mobilehq_url": "apple/iphone/iphone-5",
-			"jstech_url": {"url":"for-iphone/i-phone-5","path":"952_1087"}
+	"Iphone":{
+		"Iphone 4":{
+				"valueparts_url":"apple-iphone-parts/iphone-4-parts",
+				"hitechparts_url":"apple/iphone/iphone-4/",
+				"mobilehq_url": "apple/iphone/iphone-4",
+				"jstech_url": {"url":"for-iphone/i-phone-4","path":"952_953"}
+			   },
+		"Iphone 4s":{
+				"valueparts_url":"apple-iphone-parts/iphone-4s-parts",
+				"hitechparts_url":"apple/iphone/iphone-4s/",
+				"mobilehq_url": "apple/iphone/iphone-4s",
+				"jstech_url": {"url":"for-iphone/i-phone-4s","path":"952_1040"}
+			   },
+		"Iphone 5":{
+				"valueparts_url":"apple-iphone-parts/iphone-5-parts",
+				"hitechparts_url":"apple/iphone/iphone-5/",
+				"mobilehq_url": "apple/iphone/iphone-5",
+				"jstech_url": {"url":"for-iphone/i-phone-5","path":"952_1087"}
+				},
+		"Iphone 5c":{
+					"valueparts_url":"apple-iphone-parts/iphone-5c-parts",
+					"hitechparts_url":"apple/iphone/iphone-5c/",
+					"mobilehq_url": "apple/iphone/iphone-5c",
+					"jstech_url": {"url":"for-iphone/i-phone-5c","path":"952_1160"}
+				},
+		"Iphone 5s":{
+					"valueparts_url":"apple-iphone-parts/iphone-5s-parts",
+					"hitechparts_url":"apple/iphone/iphone-5s",
+					"mobilehq_url": "apple/iphone/iphone-5s",
+					"jstech_url": {"url":"for-iphone/i-phone-5s","path":"952_1156"}
+				},
+		"Iphone SE":{
+					"valueparts_url":"apple-iphone-parts/iphone-se-parts",
+					"hitechparts_url":"apple/iphone/iphone-5se",
+					"mobilehq_url": "apple/iphone/iphone-5se",
+					"jstech_url": {"url":"for-iphone/i-phone-se","path":"952_1410"}
+				},
+		"Iphone 6":{
+					"valueparts_url":"apple-iphone-parts/iphone-6-4-7-inch-parts",
+					"hitechparts_url":"apple/iphone/iphone-6",
+					"mobilehq_url": "apple/iphone/iphone-6",
+					"jstech_url": {"url":"for-iphone/i-phone-6","path":"952_1247"}
+				},
+		"Iphone 6 Plus":{
+					"valueparts_url":"apple-iphone-parts/iphone-6-plus-5-5-inch-parts",
+					"hitechparts_url":"apple/iphone/iphone-6-plus",
+					"mobilehq_url": "apple/iphone/iphone-6-plus",
+					"jstech_url": {"url":"for-iphone/i-phone-6-plus","path":"952_1257"}
+				},
+		"Iphone 6s":{
+					"valueparts_url":"apple-iphone-parts/iphone-6s-4-7-inch-parts",
+					"hitechparts_url":"apple/iphone/iphone-6s",
+					"mobilehq_url": "apple/iphone/iphone-6s",
+					"jstech_url": {"url":"for-iphone/i-phone-6s","path":"952_1345"}
+				},
+		"Iphone 6s Plus":{
+					"valueparts_url":"apple-iphone-parts/iphone-6s-plus-5-5-inch-parts",
+					"hitechparts_url":"apple/iphone/iphone-6s-plus",
+					"mobilehq_url": "apple/iphone/iphone-6s-plus",
+					"jstech_url": {"url":"for-iphone/i-phone-6s-plus","path":"952_1346"}
+				},
+		"Iphone 7":{
+					"valueparts_url":"apple-iphone-parts/iphone-7-parts",
+					"hitechparts_url":"apple/iphone/iphone-7",
+					"mobilehq_url": "apple/iphone/iphone-7",
+					"jstech_url": {"url":"for-iphone/i-phone-7","path":"952_1412"}
+				},
+		"Iphone 7 Plus":{
+					"valueparts_url":"apple-iphone-parts/iphone-7-plus-parts",
+					"hitechparts_url":"apple/iphone/iphone-7-plus",
+					"mobilehq_url": "apple/iphone/iphone-7-plus",
+					"jstech_url": {"url":"for-iphone/i-phone-7-plus","path":"952_1411"}
+				},
+		"Iphone 8":{
+					"valueparts_url":"apple-iphone-parts/iphone-8-parts",
+					"hitechparts_url":"apple/iphone/iphone-8",
+					"mobilehq_url": "apple/iphone/iphone-8",
+					"jstech_url": {"url":"for-iphone/i-phone-8","path":"952_1590"}
+				},
+		"Iphone 8 Plus":{
+					"valueparts_url":"apple-iphone-parts/iphone-8-plus-parts",
+					"hitechparts_url":"apple/iphone/iphone-8-plus",
+					"mobilehq_url": "apple/iphone/iphone-8-plus",
+					"jstech_url": {"url":"for-iphone/i-phone-8-plus","path":"952_1591"}
+				},
+		"Iphone X":{
+					"valueparts_url":"apple-iphone-parts/iphone-x-parts",
+					"hitechparts_url":"apple/iphone/iphone-x",
+					"mobilehq_url": "apple/iphone/iphone-x",
+					"jstech_url": {"url":"for-iphone/i-phone-x","path":"952_1601"}
+				}
 			},
-	"Iphone 5c":{
-				"valueparts_url":"apple-iphone-parts/iphone-5c-parts",
-				"hitechparts_url":"apple/iphone/iphone-5c/",
-				"mobilehq_url": "apple/iphone/iphone-5c",
-				"jstech_url": {"url":"for-iphone/i-phone-5c","path":"952_1160"}
+		"Ipad":{
+			"Ipad 2":{
+				"valueparts_url":"apple-ipad-parts/ipad-2-wi-fi-wi-fi-3g-parts",
+				"hitechparts_url":"apple/ipad/ipad-2/",
+				"mobilehq" : "apple/ipad/ipad-2",
+				"jstech_url": {"url":"i-pad/i-pad-2","path":"949_1003"}
 			},
-	"Iphone 5s":{
-				"valueparts_url":"apple-iphone-parts/iphone-5s-parts",
-				"hitechparts_url":"apple/iphone/iphone-5s",
-				"mobilehq_url": "apple/iphone/iphone-5s",
-				"jstech_url": {"url":"for-iphone/i-phone-5s","path":"952_1156"}
+			"Ipad 3":{
+				"valueparts_url":"apple-ipad-parts/the-new-ipad-ipad-3-parts",
+				"hitechparts_url":"apple/ipad/ipad-3/",
+				"mobilehq" : "apple/ipad/ipad-3",
+				"jstech_url": {"url":"i-pad/i-pad-3","path":"949_1061"}
 			},
-	"Iphone SE":{
-				"valueparts_url":"apple-iphone-parts/iphone-se-parts",
-				"hitechparts_url":"apple/iphone/iphone-5se",
-				"mobilehq_url": "apple/iphone/iphone-5se",
-				"jstech_url": {"url":"for-iphone/i-phone-se","path":"952_1410"}
+			"Ipad 4":{
+				"valueparts_url":"apple-ipad-parts/ipad-with-retina-display-parts",
+				"hitechparts_url":"apple/ipad/ipad-4/",
+				"mobilehq" : "apple/ipad/ipad-4",
+				"jstech_url": {"url":"i-pad/i-pad-4","path":"949_1094"}
 			},
-	"Iphone 6":{
-				"valueparts_url":"apple-iphone-parts/iphone-6-4-7-inch-parts",
-				"hitechparts_url":"apple/iphone/iphone-6",
-				"mobilehq_url": "apple/iphone/iphone-6",
-				"jstech_url": {"url":"for-iphone/i-phone-6","path":"952_1247"}
+			"Ipad Air":{
+				"valueparts_url":"apple-ipad-parts/ipad-air-parts",
+				"hitechparts_url":"apple/ipad/ipad-air/",
+				"mobilehq" : "apple/ipad/ipad-air",
+				"jstech_url": {"url":"i-pad/i-pad-air","path":"949_1186"}
 			},
-	"Iphone 6 Plus":{
-				"valueparts_url":"apple-iphone-parts/iphone-6-plus-5-5-inch-parts",
-				"hitechparts_url":"apple/iphone/iphone-6-plus",
-				"mobilehq_url": "apple/iphone/iphone-6-plus",
-				"jstech_url": {"url":"for-iphone/i-phone-6-plus","path":"952_1257"}
+			"Ipad Air 2":{
+				"valueparts_url":"apple-ipad-parts/ipad-6-ipad-air-2-parts",
+				"hitechparts_url":"apple/ipad/ipad-air-2/",
+				"mobilehq" : "apple/ipad/ipad-air-2",
+				"jstech_url": {"url":"i-pad/i-pad-air-2","path":"949_1279"}
 			},
-	"Iphone 6s":{
-				"valueparts_url":"apple-iphone-parts/iphone-6s-4-7-inch-parts",
-				"hitechparts_url":"apple/iphone/iphone-6s",
-				"mobilehq_url": "apple/iphone/iphone-6s",
-				"jstech_url": {"url":"for-iphone/i-phone-6s","path":"952_1345"}
+			"Ipad Pro 12.9 (2017)":{
+				"valueparts_url":"apple-ipad-parts/ipad-pro-12-9-parts",
+				"hitechparts_url":"apple/ipad/ipipad-pro-12-9/",
+				"mobilehq" : "apple/ipad/ipad-pro",
+				"jstech_url": {"url":"i-pad/i-pad-pro","path":"949_1382"}
 			},
-	"Iphone 6s Plus":{
-				"valueparts_url":"apple-iphone-parts/iphone-6s-plus-5-5-inch-parts",
-				"hitechparts_url":"apple/iphone/iphone-6s-plus",
-				"mobilehq_url": "apple/iphone/iphone-6s-plus",
-				"jstech_url": {"url":"for-iphone/i-phone-6s-plus","path":"952_1346"}
+			"Ipad Mini 1":{
+				"valueparts_url":"apple-ipad-parts/ipad-mini-1499112695",
+				"hitechparts_url":"apple/ipad/ipad-mini/",
+				"mobilehq" : "apple/ipad/ipad-mini",
+				"jstech_url": {"url":"i-pad/i-pad-mini","path":"949_1093"}
 			},
-	"Iphone 7":{
-				"valueparts_url":"apple-iphone-parts/iphone-7-parts",
-				"hitechparts_url":"apple/iphone/iphone-7",
-				"mobilehq_url": "apple/iphone/iphone-7",
-				"jstech_url": {"url":"for-iphone/i-phone-7","path":"952_1412"}
+			"Ipad Mini 2":{
+				"valueparts_url":"apple-ipad-parts/ipad-mini-2-ipad-mini-with-retina-display-parts",
+				"hitechparts_url":"apple/ipad/ipad-mini-2/",
+				"mobilehq" : "apple/ipad/ipad-mini-retina-2",
+				"jstech_url": {"url":"i-pad/i-pad-mini-2","path":"949_1203"}
 			},
-	"Iphone 7 Plus":{
-				"valueparts_url":"apple-iphone-parts/iphone-7-plus-parts",
-				"hitechparts_url":"apple/iphone/iphone-7-plus",
-				"mobilehq_url": "apple/iphone/iphone-7-plus",
-				"jstech_url": {"url":"for-iphone/i-phone-7-plus","path":"952_1411"}
+			"Ipad Mini 3":{
+				"valueparts_url":"apple-ipad-parts/ipad-mini-3-parts",
+				"hitechparts_url":"apple/ipad/ipad-mini-3/",
+				"mobilehq" : "apple/ipad/ipad-mini-3",
+				"jstech_url": {"url":"i-pad/i-pad-mini-3","path":"949_1285"}
 			},
-	"Iphone 8":{
-				"valueparts_url":"apple-iphone-parts/iphone-8-parts",
-				"hitechparts_url":"apple/iphone/iphone-8",
-				"mobilehq_url": "apple/iphone/iphone-8",
-				"jstech_url": {"url":"for-iphone/i-phone-8","path":"952_1590"}
-			},
-	"Iphone 8 Plus":{
-				"valueparts_url":"apple-iphone-parts/iphone-8-plus-parts",
-				"hitechparts_url":"apple/iphone/iphone-8-plus",
-				"mobilehq_url": "apple/iphone/iphone-8-plus",
-				"jstech_url": {"url":"for-iphone/i-phone-8-plus","path":"952_1591"}
-			},
-	"Iphone X":{
-				"valueparts_url":"apple-iphone-parts/iphone-x-parts",
-				"hitechparts_url":"apple/iphone/iphone-x",
-				"mobilehq_url": "apple/iphone/iphone-x",
-				"jstech_url": {"url":"for-iphone/i-phone-x","path":"952_1601"}
+			"Ipad Mini 4":{
+				"valueparts_url":"apple-ipad-parts/ipad-mini-4-parts",
+				"hitechparts_url":"apple/ipad/ipad-mini-4/",
+				"mobilehq" : "apple/ipad/ipad-mini-4",
+				"jstech_url": {"url":"i-pad/i-pad-mini-4","path":"949_1378"}
 			}
 		},
-	"Ipad":{
-		"Ipad 2":{
-			"valueparts_url":"apple-ipad-parts/ipad-2-wi-fi-wi-fi-3g-parts",
-			"hitechparts_url":"apple/ipad/ipad-2/",
-			"mobilehq" : "apple/ipad/ipad-2",
-			"jstech_url": {"url":"i-pad/i-pad-2","path":"949_1003"}
-		},
-		"Ipad 3":{
-			"valueparts_url":"apple-ipad-parts/the-new-ipad-ipad-3-parts",
-			"hitechparts_url":"apple/ipad/ipad-3/",
-			"mobilehq" : "apple/ipad/ipad-3",
-			"jstech_url": {"url":"i-pad/i-pad-3","path":"949_1061"}
-		},
-		"Ipad 4":{
-			"valueparts_url":"apple-ipad-parts/ipad-with-retina-display-parts",
-			"hitechparts_url":"apple/ipad/ipad-4/",
-			"mobilehq" : "apple/ipad/ipad-4",
-			"jstech_url": {"url":"i-pad/i-pad-4","path":"949_1094"}
-		},
-		"Ipad Air":{
-			"valueparts_url":"apple-ipad-parts/ipad-air-parts",
-			"hitechparts_url":"apple/ipad/ipad-air/",
-			"mobilehq" : "apple/ipad/ipad-air",
-			"jstech_url": {"url":"i-pad/i-pad-air","path":"949_1186"}
-		},
-		"Ipad Air 2":{
-			"valueparts_url":"apple-ipad-parts/ipad-6-ipad-air-2-parts",
-			"hitechparts_url":"apple/ipad/ipad-air-2/",
-			"mobilehq" : "apple/ipad/ipad-air-2",
-			"jstech_url": {"url":"i-pad/i-pad-air-2","path":"949_1279"}
-		},
-		"Ipad Pro 12.9 (2017)":{
-			"valueparts_url":"apple-ipad-parts/ipad-pro-12-9-parts",
-			"hitechparts_url":"apple/ipad/ipipad-pro-12-9/",
-			"mobilehq" : "apple/ipad/ipad-pro",
-			"jstech_url": {"url":"i-pad/i-pad-pro","path":"949_1382"}
-		},
-		"Ipad Mini 1":{
-			"valueparts_url":"apple-ipad-parts/ipad-mini-1499112695",
-			"hitechparts_url":"apple/ipad/ipad-mini/",
-			"mobilehq" : "apple/ipad/ipad-mini",
-			"jstech_url": {"url":"i-pad/i-pad-mini","path":"949_1093"}
-		},
-		"Ipad Mini 2":{
-			"valueparts_url":"apple-ipad-parts/ipad-mini-2-ipad-mini-with-retina-display-parts",
-			"hitechparts_url":"apple/ipad/ipad-mini-2/",
-			"mobilehq" : "apple/ipad/ipad-mini-retina-2",
-			"jstech_url": {"url":"i-pad/i-pad-mini-2","path":"949_1203"}
-		},
-		"Ipad Mini 3":{
-			"valueparts_url":"apple-ipad-parts/ipad-mini-3-parts",
-			"hitechparts_url":"apple/ipad/ipad-mini-3/",
-			"mobilehq" : "apple/ipad/ipad-mini-3",
-			"jstech_url": {"url":"i-pad/i-pad-mini-3","path":"949_1285"}
-		},
-		"Ipad Mini 4":{
-			"valueparts_url":"apple-ipad-parts/ipad-mini-4-parts",
-			"hitechparts_url":"apple/ipad/ipad-mini-4/",
-			"mobilehq" : "apple/ipad/ipad-mini-4",
-			"jstech_url": {"url":"i-pad/i-pad-mini-4","path":"949_1378"}
-		}
-	},
-	"Samsung": {
-		"Galaxy s3":{
-			"valueparts_url":"samsung-parts/samsung-galaxy-s3-i9300-i9305-parts",
-			"hitechparts_url":"samsung/s3/",
-			"mobilehq" : "samsung/galaxy/s3-i9300-i9305",
-			"jstech_url": {"url":"samsung/galaxy-s3-i9300","path":"942_1071"}
-		},
-		"Galaxy s4":{
-			"valueparts_url":"samsung-parts/samsung-galaxy-s4-i9500-parts",
-			"hitechparts_url":"samsung/s4/",
-			"mobilehq" : "samsung/galaxy/s4-i9500-i9505-i9506-i9507",
-			"jstech_url": {"url":"samsung/galaxy-s4-i9500","path":"942_1126"}
-		},
-		"Galaxy s5":{
-			"valueparts_url":"samsung-parts/samsung-galaxy-s5-parts",
-			"hitechparts_url":"samsung/s5/",
-			"mobilehq" : "samsung/galaxy/s5-g900",
-			"jstech_url": {"url":"samsung/galaxy-s5","path":"942_1211"}
-		},
-		"Galaxy s6":{
-			"valueparts_url":"samsung-parts/samsung-galaxy-s6-parts",
-			"hitechparts_url":"samsung/s6/",
-			"mobilehq" : "samsung/galaxy/g920i",
-			"jstech_url": {"url":"samsung/galaxy-s6","path":"942_1293"}
-		},
-		"Galaxy s6 Edge":{
-			"valueparts_url":"samsung-parts/samsung-galaxy-s6-edge",
-			"hitechparts_url":"samsung/s6-edge/",
-			"mobilehq" : "samsung/galaxy/g925i",
-			"jstech_url": {"url":"samsung/galaxy-s6-edge","path":"942_1300"}
-		},
-		"Galaxy s7":{
-			"valueparts_url":"samsung-parts/samsung-galaxy-s7",
-			"hitechparts_url":"samsung/s7/",
-			"mobilehq" : "samsung/galaxy/galaxy-s7",
-			"jstech_url": {"url":"samsung/galaxy-s7","path":"942_1383"}
-		},
-		"Galaxy s7 Edge":{
-			"valueparts_url":"samsung-parts/samsung-galaxy-s7-edge",
-			"hitechparts_url":"samsung/s7-edge/",
-			"mobilehq" : "samsung/galaxy/s7-edge",
-			"jstech_url": {"url":"samsung/samsung-galaxy-s7-edge","path":"942_1384"}
-		},
-		"Galaxy s8":{
-			"valueparts_url":"samsung-parts/samsung-galaxy-s8",
-			"hitechparts_url":"samsung/s8/",
-			"mobilehq" : "samsung/galaxy/s8",
-			"jstech_url": {"url":"samsung/galaxy-s8","path":"942_1439"}
-		},
-		"Note 2":{
-			"valueparts_url":"samsung-parts/samsung-galaxy-note-2-n7100-parts",
-			"hitechparts_url":"samsung/samsung-note-2/",
-			"mobilehq" : "samsung/galaxy-note/n7100",
-			"jstech_url": {"url":"samsung/galaxy-note-2-n7100","path":"942_1100"}
-		},
-		"Note 3":{
-			"valueparts_url":"samsung-parts/samsung-galaxy-note-3-n9000-n9005-parts",
-			"hitechparts_url":"samsung/samsung-note-3/",
-			"mobilehq" : "samsung/galaxy-note/n9005",
-			"jstech_url": {"url":"samsung/galaxy-note-3-n9005","path":"942_1166"}
-		},
-		"Note 4":{
-			"valueparts_url":"samsung-parts/samsung-galaxy-note-4-sm-n910g-parts",
-			"hitechparts_url":"samsung/samsung-note-4/",
-			"mobilehq" : "samsung/galaxy-note/galaxy-note-4-n910g",
-			"jstech_url": {"url":"samsung/galaxy-note-4","path":"942_1260"}
-		},
-		"Note 5":{
-			"valueparts_url":"samsung-parts/samsung-galaxy-note-5-parts",
-			"hitechparts_url":"samsung/samsung-note-5/",
-			"mobilehq" : "samsung/galaxy-note/galaxy-note-5",
-			"jstech_url": {"url":"samsung/galaxy-note-5","path":"942_1338"}
+		"Samsung": {
+			"Galaxy s3":{
+				"valueparts_url":"samsung-parts/samsung-galaxy-s3-i9300-i9305-parts",
+				"hitechparts_url":"samsung/s3/",
+				"mobilehq" : "samsung/galaxy/s3-i9300-i9305",
+				"jstech_url": {"url":"samsung/galaxy-s3-i9300","path":"942_1071"}
+			},
+			"Galaxy s4":{
+				"valueparts_url":"samsung-parts/samsung-galaxy-s4-i9500-parts",
+				"hitechparts_url":"samsung/s4/",
+				"mobilehq" : "samsung/galaxy/s4-i9500-i9505-i9506-i9507",
+				"jstech_url": {"url":"samsung/galaxy-s4-i9500","path":"942_1126"}
+			},
+			"Galaxy s5":{
+				"valueparts_url":"samsung-parts/samsung-galaxy-s5-parts",
+				"hitechparts_url":"samsung/s5/",
+				"mobilehq" : "samsung/galaxy/s5-g900",
+				"jstech_url": {"url":"samsung/galaxy-s5","path":"942_1211"}
+			},
+			"Galaxy s6":{
+				"valueparts_url":"samsung-parts/samsung-galaxy-s6-parts",
+				"hitechparts_url":"samsung/s6/",
+				"mobilehq" : "samsung/galaxy/g920i",
+				"jstech_url": {"url":"samsung/galaxy-s6","path":"942_1293"}
+			},
+			"Galaxy s6 Edge":{
+				"valueparts_url":"samsung-parts/samsung-galaxy-s6-edge",
+				"hitechparts_url":"samsung/s6-edge/",
+				"mobilehq" : "samsung/galaxy/g925i",
+				"jstech_url": {"url":"samsung/galaxy-s6-edge","path":"942_1300"}
+			},
+			"Galaxy s7":{
+				"valueparts_url":"samsung-parts/samsung-galaxy-s7",
+				"hitechparts_url":"samsung/s7/",
+				"mobilehq" : "samsung/galaxy/galaxy-s7",
+				"jstech_url": {"url":"samsung/galaxy-s7","path":"942_1383"}
+			},
+			"Galaxy s7 Edge":{
+				"valueparts_url":"samsung-parts/samsung-galaxy-s7-edge",
+				"hitechparts_url":"samsung/s7-edge/",
+				"mobilehq" : "samsung/galaxy/s7-edge",
+				"jstech_url": {"url":"samsung/samsung-galaxy-s7-edge","path":"942_1384"}
+			},
+			"Galaxy s8":{
+				"valueparts_url":"samsung-parts/samsung-galaxy-s8",
+				"hitechparts_url":"samsung/s8/",
+				"mobilehq" : "samsung/galaxy/s8",
+				"jstech_url": {"url":"samsung/galaxy-s8","path":"942_1439"}
+			},
+			"Note 2":{
+				"valueparts_url":"samsung-parts/samsung-galaxy-note-2-n7100-parts",
+				"hitechparts_url":"samsung/samsung-note-2/",
+				"mobilehq" : "samsung/galaxy-note/n7100",
+				"jstech_url": {"url":"samsung/galaxy-note-2-n7100","path":"942_1100"}
+			},
+			"Note 3":{
+				"valueparts_url":"samsung-parts/samsung-galaxy-note-3-n9000-n9005-parts",
+				"hitechparts_url":"samsung/samsung-note-3/",
+				"mobilehq" : "samsung/galaxy-note/n9005",
+				"jstech_url": {"url":"samsung/galaxy-note-3-n9005","path":"942_1166"}
+			},
+			"Note 4":{
+				"valueparts_url":"samsung-parts/samsung-galaxy-note-4-sm-n910g-parts",
+				"hitechparts_url":"samsung/samsung-note-4/",
+				"mobilehq" : "samsung/galaxy-note/galaxy-note-4-n910g",
+				"jstech_url": {"url":"samsung/galaxy-note-4","path":"942_1260"}
+			},
+			"Note 5":{
+				"valueparts_url":"samsung-parts/samsung-galaxy-note-5-parts",
+				"hitechparts_url":"samsung/samsung-note-5/",
+				"mobilehq" : "samsung/galaxy-note/galaxy-note-5",
+				"jstech_url": {"url":"samsung/galaxy-note-5","path":"942_1338"}
+			}
 		}
 	}
-}
+	
