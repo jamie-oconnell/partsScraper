@@ -4,8 +4,6 @@ const fs = require('fs');
 var crypto = require('crypto');
 const pathToSourceJson = 'source.json';
 
-
-
 function getJstechData() {
     var alldata = {};
     var lastResponse = {};
@@ -488,7 +486,7 @@ function getValuePartsData() {
                 var priceWithCurrncy = $(this).find('.price').find('.price-new').text();
                 // children().remove().end().text().replace(/(\r\n|\n|\r)/gm, '').trim();
                             let priceValue = priceWithCurrncy.split("$")[1];
-			    
+			    var publicPrice = $(this).find('.price').find('.price-old').text();
 			    var oldPrice = priceWithCurrncy;
 			    var oldPriceValue = priceValue;
 			    var diff = '0.00';
@@ -518,7 +516,8 @@ function getValuePartsData() {
 			    productdata[productUrlHash] ={
                                 'product_name': $(this).find('.name').find('a').text(),
                                 'price': priceWithCurrncy,
-				'price_value': priceValue,
+                'price_value': priceValue,
+                'public_price' : publicPrice,
                                 "product_url" : productUrl,
 				'old_price': oldPrice,
 				'old_price_value': oldPriceValue,
