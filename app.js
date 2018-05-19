@@ -54,6 +54,7 @@ function supplier (req, res){
   
   readSupplireDataFile(req.params.supplier);
   try {
+      console.log(alldata[req.params.supplier]);
       res.send({data:alldata[req.params.supplier]});
   }
   catch (e) {
