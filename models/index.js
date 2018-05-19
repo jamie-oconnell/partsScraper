@@ -48,10 +48,12 @@ function getJstechData() {
                             let productUrl = $(this).find('#desk-img-phone').find('a').attr('href');
                             let productUrlHash = crypto.createHash('md5').update(productUrl).digest("hex");
                             var priceWithCurrncy = $(this).find('.price-new').text().replace(/(\r\n|\n|\r)/gm, '').trim();
-                            let priceValue = priceWithCurrncy.split("$")[1];
                             let public_price = $(this).find('.price-old').text().replace(/(\r\n|\n|\r)/gm, '').trim();
-
-
+                            if (priceWithCurrncy == ""){
+                                public_price = $(this).find('.desk-img-desc').children().last().text().replace(/(\r\n|\n|\r)/gm, '').trim();
+                                priceWithCurrncy = $(this).find('.desk-img-desc').children().last().text().replace(/(\r\n|\n|\r)/gm, '').trim();
+                            }
+                            let priceValue = priceWithCurrncy.split("$")[1];
                             var oldPrice = priceWithCurrncy;
                             var oldPriceValue = priceValue;
                             var diff = '0.00';
