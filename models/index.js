@@ -49,6 +49,7 @@ function getJstechData() {
                             let productUrlHash = crypto.createHash('md5').update(productUrl).digest("hex");
                             var priceWithCurrncy = $(this).find('.price-new').text().replace(/(\r\n|\n|\r)/gm, '').trim();
                             let priceValue = priceWithCurrncy.split("$")[1];
+                            let public_price = $(this).find('.price-old').text().replace(/(\r\n|\n|\r)/gm, '').trim();
 
 
                             var oldPrice = priceWithCurrncy;
@@ -82,6 +83,7 @@ function getJstechData() {
                                 'product_name': $(this).find('.desk-img-desc').find('a').text().replace(/(\r\n|\n|\r)/gm, '').trim(),
                                 'price': priceWithCurrncy,
                                 'price_value': priceValue,
+                                'public_price': public_price,
                                 "product_url" : productUrl,
                                 'old_price': oldPrice,
                                 'old_price_value': oldPriceValue,
@@ -158,6 +160,7 @@ function getJstechData() {
 				priceWithCurrncy = item.price;
 			    }
                             let priceValue = priceWithCurrncy+''.split("$")[1];
+                            let public_price = item.price;
                             var oldPrice = priceWithCurrncy;
                             var oldPriceValue = priceValue;
                             var diff = '0.00';
@@ -189,6 +192,7 @@ function getJstechData() {
                                 'product_name': item.name,
                                 'price': priceWithCurrncy,
                                 'price_value': priceValue,
+                                'public_price' : public_price,
                                 "product_url" : productUrl,
                                 'old_price': oldPrice,
                                 'old_price_value': oldPriceValue,
