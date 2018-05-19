@@ -9,6 +9,7 @@ const app = express();
 var alldata = {};
 var sourcesData = {};
 var supplierArray = ['valueparts','hitechparts','jstech'];
+var fileArray = {'valueparts':'ValueParts.json','hitechparts':'HitechParts.json','jstech':'JstechParts.json'};
 
 app.use('/', index);
 
@@ -32,27 +33,26 @@ function sources (req, res){
     res.send(sourcesData);
   };
 
-fs.readFile('ValueParts.json', (err, data) => {
-  if (err) {
-      throw err;
-  }
-  alldata[supplierArray[0]] = JSON.parse(data);
-});
-fs.readFile('HitechParts.json', (err, data) => {
-  if (err) {
-      throw err;
-  }
-  alldata[supplierArray[1]] = JSON.parse(data);
-});
-fs.readFile('JstechParts.json', (err, data) => {
-  if (err) {
-      throw err;
-  }
-  alldata[supplierArray[2]] = JSON.parse(data);
-});
+
+
+function readSupplireDataFile(supplier){
+        console.log('supplier name '+supplier);
+
+	let fileName = fileArray[supplier];
+        console.log('filename '+fileName);
+	fs.readFile(fileName, (err, data) => {
+           if (err) {
+               throw err;
+            }
+        alldata[supplier] = JSON.parse(data);
+        });
+
+
+}
 
 function supplier (req, res){
-
+  
+  readSupplireDataFile(req.params.supplier);
   try {
       res.send({data:alldata[req.params.supplier]});
   }
@@ -63,6 +63,7 @@ function supplier (req, res){
 
 function supplierfilter (req, res){
 
+    readSupplireDataFile(req.params.supplier);
     var categoryid = decodeURI(req.params.category);
     
     if(req.params.supplier!=undefined &&  supplierArray.indexOf(req.params.supplier)>-1){
@@ -79,8 +80,11 @@ function supplierfilter (req, res){
 
 };
 
+
+
 function supplierfilterspecific(req, res){
 
+  readSupplireDataFile(req.params.supplier);
   var categoryid = req.params.category;
   var id = decodeURI(req.params.id);
 
