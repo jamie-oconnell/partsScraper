@@ -702,7 +702,7 @@ function getValuePartsData() {
                                 'product_name': $(this).find('.name').find('a').text(),
                                 'price': priceWithCurrncy,
                 'price_value': priceValue,
-                "Public_price" : publicPrice,
+                "public_price" : publicPrice,
                                 "product_url" : productUrl,
 				'old_price': oldPrice,
 				'old_price_value': oldPriceValue,

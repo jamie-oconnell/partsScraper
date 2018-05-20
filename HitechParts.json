@@ -1,141 +1,171 @@
 {
   "data": {
     "Iphone": {
-      "Iphone 5c": {
-        "e7e39a15f3a80bb37da884e853a3ea39": {
-          "product_name": "Iphone 5,6 Charge lead",
-          "price": "$2.40",
-          "price_value": "2.40",
-          "product_url": "http://hitechparts.com.au/product/iphone-56-charge-lead/",
-          "old_price": "$2.40",
-          "old_price_value": "2.40",
+      "Iphone 4": {
+        "0478fff7c6821b02c56063d925002eb7": {
+          "product_name": "Iphone 4 Charge lead in retail box",
+          "price": "$2.50",
+          "price_value": "2.50",
+          "product_url": "http://hitechparts.com.au/product/iphone-4-charge-lead-in-retail-box/",
+          "old_price": "$2.50",
+          "old_price_value": "2.50",
           "is_changed": false,
-          "diff": "0.00"
+          "diff": 0
         },
-        "669062bba6842fa5c94fad13c1521463": {
-          "product_name": "iPhone 5C Screen Black – AU supplier",
-          "price": "$29.00",
-          "price_value": "29.00",
-          "product_url": "http://hitechparts.com.au/product/iphone-5c-screen-black-2/",
-          "old_price": "$29.00",
-          "old_price_value": "29.00",
+        "9f1aa7e5e4f2075aa9be473de702d443": {
+          "product_name": "iPhone 4G Screen White",
+          "price": "$23.00",
+          "price_value": "23.00",
+          "product_url": "http://hitechparts.com.au/product/iphone-4g-screen-white/",
+          "old_price": "$23.00",
+          "old_price_value": "23.00",
           "is_changed": false,
-          "diff": "0.00"
+          "diff": 0
         },
-        "97a8e177aee559a4b02c960a14cc445d": {
-          "product_name": "iPhone 5C Battery",
+        "b472f5151a7f80e720edd319f205a9ab": {
+          "product_name": "iPhone 4G Screen Black",
+          "price": "$23.00",
+          "price_value": "23.00",
+          "product_url": "http://hitechparts.com.au/product/iphone-4g-screen-black/",
+          "old_price": "$23.00",
+          "old_price_value": "23.00",
+          "is_changed": false,
+          "diff": 0
+        },
+        "2bf135d11fa0f48819b6a3ae6f3f8ced": {
+          "product_name": "iPhone 4G Battery",
           "price": "$12.00",
           "price_value": "12.00",
-          "product_url": "http://hitechparts.com.au/product/iphone-5c-battery/",
+          "product_url": "http://hitechparts.com.au/product/iphone-4g-battery/",
           "old_price": "$12.00",
           "old_price_value": "12.00",
           "is_changed": false,
-          "diff": "0.00"
+          "diff": 0
         },
-        "ab735bb7c856e13f1bdb2c5b04622542": {
-          "product_name": "iPhone 5C Charging Dock Flex Cable",
-          "price": "$5.80",
-          "price_value": "5.80",
-          "product_url": "http://hitechparts.com.au/product/iphone-5c-charging-dock-flex-cable/",
-          "old_price": "$5.80",
-          "old_price_value": "5.80",
-          "is_changed": false,
-          "diff": "0.00"
-        },
-        "d45b0ce8426f839b316e32763b97ac6a": {
-          "product_name": "iPhone 5C Front Camera",
+        "a199b420c99e6bba0b84d0d8ef0c823b": {
+          "product_name": "iPhone 4G Charging Dock Flex Cable Black",
           "price": "$7.00",
           "price_value": "7.00",
-          "product_url": "http://hitechparts.com.au/product/iphone-5c-front-camera/",
+          "product_url": "http://hitechparts.com.au/product/iphone-4g-charging-dock-flex-cable-black/",
           "old_price": "$7.00",
           "old_price_value": "7.00",
           "is_changed": false,
-          "diff": "0.00"
+          "diff": 0
         },
-        "651fb11e79618195a4d6721a22c421f3": {
-          "product_name": "iPhone 5C Back Camera",
-          "price": "$8.00",
-          "price_value": "8.00",
-          "product_url": "http://hitechparts.com.au/product/iphone-5c-back-camera/",
-          "old_price": "$8.00",
-          "old_price_value": "8.00",
+        "dfb9ed481e793bc3db7bd6b62c076e5c": {
+          "product_name": "iPhone 4G Charging Dock Flex Cable White",
+          "price": "$8.14",
+          "price_value": "8.14",
+          "product_url": "http://hitechparts.com.au/product/iphone-4g-charging-dock-flex-cable-white/",
+          "old_price": "$8.14",
+          "old_price_value": "8.14",
           "is_changed": false,
-          "diff": "0.00"
+          "diff": 0
         },
-        "d798d61b66a6f9437598dae82f8190cf": {
-          "product_name": "iPhone 5C Power Button Flex Cable",
-          "price": "$6.50",
-          "price_value": "6.50",
-          "product_url": "http://hitechparts.com.au/product/iphone-5c-power-button-flex-cable/",
-          "old_price": "$6.50",
-          "old_price_value": "6.50",
+        "b05f0ae89b2db6988d16ec63e4ab4ed8": {
+          "product_name": "iPhone 4G White Home Button Plastic With Metal Square",
+          "price": "$1.23",
+          "price_value": "1.23",
+          "product_url": "http://hitechparts.com.au/product/iphone-4g-white-home-button-plastic-with-metal-square/",
+          "old_price": "$1.23",
+          "old_price_value": "1.23",
           "is_changed": false,
-          "diff": "0.00"
+          "diff": 0
         },
-        "66ffb9a5b7a20f7a0dc4ccf09c6724f4": {
-          "product_name": "iPhone 5C Home Button Flex Cable",
-          "price": "$1.40",
-          "price_value": "1.40",
-          "product_url": "http://hitechparts.com.au/product/iphone-5c-home-button-flex-cable/",
-          "old_price": "$1.40",
-          "old_price_value": "1.40",
+        "dacf90ba521d7a8825c5a21ce10b0d18": {
+          "product_name": "iPhone 4G Black Home Button Plastic With Metal Square",
+          "price": "$1.33",
+          "price_value": "1.33",
+          "product_url": "http://hitechparts.com.au/product/iphone-4g-black-home-button-plastic-with-metal-square/",
+          "old_price": "$1.33",
+          "old_price_value": "1.33",
           "is_changed": false,
-          "diff": "0.00"
+          "diff": 0
         },
-        "66cca2e7c04d735eaa2c11850f5a36d5": {
-          "product_name": "iPhone 5C Home Button Plastic  Black with Rubber Adhesive",
-          "price": "$1.80",
-          "price_value": "1.80",
-          "product_url": "http://hitechparts.com.au/product/iphone-5c-home-button-plastic-with-rubber-adhesive/",
-          "old_price": "$1.80",
-          "old_price_value": "1.80",
+        "2ae68ac5cb37d0bec558d9ae8012e903": {
+          "product_name": "iPhone 4G Home Button Flex Cable",
+          "price": "$1.02",
+          "price_value": "1.02",
+          "product_url": "http://hitechparts.com.au/product/iphone-4g-home-button-flex-cable/",
+          "old_price": "$1.02",
+          "old_price_value": "1.02",
           "is_changed": false,
-          "diff": "0.00"
+          "diff": 0
         },
-        "9fabfa25363fa6a13abb26407d94a50f": {
-          "product_name": "iPhone 5C Loud Speaker",
-          "price": "$3.15",
-          "price_value": "3.15",
-          "product_url": "http://hitechparts.com.au/product/iphone-5c-loud-speaker/",
-          "old_price": "$3.15",
-          "old_price_value": "3.15",
+        "ac84e9addcbdfaef1e1285de130db787": {
+          "product_name": "iPhone 4G Loud Speaker",
+          "price": "$4.35",
+          "price_value": "4.35",
+          "product_url": "http://hitechparts.com.au/product/iphone-4g-loud-speaker/",
+          "old_price": "$4.35",
+          "old_price_value": "4.35",
           "is_changed": false,
-          "diff": "0.00"
+          "diff": 0
         },
-        "5346af39689a5568a7ae10c3d7be0958": {
-          "product_name": "iPhone 5C Earpiece Speaker",
-          "price": "$1.80",
-          "price_value": "1.80",
-          "product_url": "http://hitechparts.com.au/product/iphone-5c-earpiece-speaker/",
-          "old_price": "$1.80",
-          "old_price_value": "1.80",
+        "68fa0c7ed231bfce52f4f6cb71aaa58a": {
+          "product_name": "iPhone 4G Earpiece Speaker",
+          "price": "$1.07",
+          "price_value": "1.07",
+          "product_url": "http://hitechparts.com.au/product/iphone-4g-earpiece-speaker/",
+          "old_price": "$1.07",
+          "old_price_value": "1.07",
           "is_changed": false,
-          "diff": "0.00"
+          "diff": 0
         },
-        "7f5fd757acea66c81865172d8cb3e04f": {
-          "product_name": "iPhone 5C Screw Set",
+        "b66431e12aa37fee4d089a6deab22e02": {
+          "product_name": "iPhone 4G Screw Set",
           "price": "$2.00",
           "price_value": "2.00",
-          "product_url": "http://hitechparts.com.au/product/iphone-5c-screw-set/",
+          "product_url": "http://hitechparts.com.au/product/iphone-4g-screw-set/",
           "old_price": "$2.00",
           "old_price_value": "2.00",
           "is_changed": false,
-          "diff": "0.00"
+          "diff": 0
         },
-        "8e8a3fe7bea329a33d2e9b027d6c37a9": {
-          "product_name": "iPhone 5 5S 5C Tempered glass screen",
-          "price": "$3.64",
-          "price_value": "3.64",
-          "product_url": "http://hitechparts.com.au/product/iphone-5-5s-5c-tempered-glass-screen/",
-          "old_price": "$3.64",
-          "old_price_value": "3.64",
+        "9924de74f01bee9ecdaaba0a85fac14b": {
+          "product_name": "iPhone 4G Sim Card Holder",
+          "price": "$1.18",
+          "price_value": "1.18",
+          "product_url": "http://hitechparts.com.au/product/iphone-4g-sim-card-holder/",
+          "old_price": "$1.18",
+          "old_price_value": "1.18",
           "is_changed": false,
-          "diff": "0.00"
+          "diff": 0
+        },
+        "1a8591fa599bfcae992b29c2ea70aaa5": {
+          "product_name": "iPhone 4G Back White",
+          "price": "$8.00",
+          "price_value": "8.00",
+          "product_url": "http://hitechparts.com.au/product/iphone-4s-back-white-2/",
+          "old_price": "$8.00",
+          "old_price_value": "8.00",
+          "is_changed": false,
+          "diff": 0
+        },
+        "7819959971f5acb653cb9328c0131a4f": {
+          "product_name": "iPhone 4G Back Black",
+          "price": "$8.00",
+          "price_value": "8.00",
+          "product_url": "http://hitechparts.com.au/product/iphone-4s-back-black-2/",
+          "old_price": "$8.00",
+          "old_price_value": "8.00",
+          "is_changed": false,
+          "diff": 0
+        },
+        "c8499dec3da730d2e56553113a5a9df4": {
+          "product_name": "iPhone 4 4S Tempered glass",
+          "price": "$5.00",
+          "price_value": "5.00",
+          "product_url": "http://hitechparts.com.au/product/iphone-4-4s-tempered-glass/",
+          "old_price": "$5.00",
+          "old_price_value": "5.00",
+          "is_changed": false,
+          "diff": 0
         }
       }
     }
   },
   "meta_data": {
-    "last_update": "2018-5-20:07:47:43"
+    "last_update": "2018-5-20:08:19:33"
   }
 }

@@ -1,517 +1,473 @@
 {
   "data": {
     "Iphone": {
-      "Iphone 5c": {
-        "ec3bd4039fb3fea561b9dbdab25f271d": {
-          "product_name": "Back light For iPhone 5C",
-          "price": "AU$2.51",
-          "price_value": "2.51",
-          "Public_price": "AU$2.87",
-          "product_url": "http://www.valueparts.com.au/parts-by-model/apple-iphone-parts/iphone-5c-parts/back-light-for-iphone-5-1077156531.html",
-          "old_price": "AU$2.51",
-          "old_price_value": "2.51",
+      "Iphone 4": {
+        "8d5b45ed75dcd424dfdd945781df66a3": {
+          "product_name": "3M Adhesive tape for iPhone 4 x5",
+          "price": "AU$5.23",
+          "price_value": "5.23",
+          "Public_price": "AU$5.94",
+          "product_url": "http://www.valueparts.com.au/parts-by-model/apple-iphone-parts/iphone-4-parts/3m-adhesive-tape-for-iphone-4-x5.html",
+          "old_price": "AU$5.23",
+          "old_price_value": "5.23",
           "is_changed": false,
-          "diff": 0
+          "diff": "0.00"
         },
-        "2b914f6658f747fc4cea19ed915887cb": {
-          "product_name": "iPhone 5/5C/5S Front Glass [Black]",
-          "price": "AU$6.20",
-          "price_value": "6.20",
-          "Public_price": "AU$7.13",
-          "product_url": "http://www.valueparts.com.au/parts-by-model/apple-iphone-parts/iphone-5c-parts/phone-5-front-lens-black.html",
-          "old_price": "AU$6.20",
-          "old_price_value": "6.20",
+        "b5dfa5e5b977fd75d8edae1039497e7b": {
+          "product_name": "Iphone 30-pin to USB Cable",
+          "price": "AU$5.72",
+          "price_value": "5.72",
+          "Public_price": "AU$6.57",
+          "product_url": "http://www.valueparts.com.au/parts-by-model/apple-iphone-parts/iphone-4-parts/apple-30-pin-to-usb-cable-original.html",
+          "old_price": "AU$5.72",
+          "old_price_value": "5.72",
           "is_changed": false,
-          "diff": 0
+          "diff": "0.00"
         },
-        "65aaba9256686744854cbc0b5aaa7f06": {
-          "product_name": "iPhone 5/5C/5S Front Glass [White]",
-          "price": "AU$6.20",
-          "price_value": "6.20",
-          "Public_price": "AU$7.13",
-          "product_url": "http://www.valueparts.com.au/parts-by-model/apple-iphone-parts/iphone-5c-parts/iphone-5-front-lens-white.html",
-          "old_price": "AU$6.20",
-          "old_price_value": "6.20",
-          "is_changed": false,
-          "diff": 0
-        },
-        "b451ab65fa7867af176dddcfe669a663": {
-          "product_name": "iPhone 5/5C/5S Nano Soft Explosion-proof membrane screen protector with retail packaging",
+        "0dc07fb62551bcd4f00dd7836306e2a3": {
+          "product_name": "iPhone 4 Back Cover [Baby Blue]",
           "price": "AU$4.14",
           "price_value": "4.14",
           "Public_price": "AU$4.75",
-          "product_url": "http://www.valueparts.com.au/parts-by-model/apple-iphone-parts/iphone-5c-parts/iphone-5-5c-5s-nano-soft-explosion-proof-membrane-screen-protector-with-retail-packaging.html",
+          "product_url": "http://www.valueparts.com.au/parts-by-model/apple-iphone-parts/iphone-4-parts/iphone-4-back-cover-baby-blue.html",
           "old_price": "AU$4.14",
           "old_price_value": "4.14",
           "is_changed": false,
-          "diff": 0
+          "diff": "0.00"
         },
-        "39f57fe16a011b1d7962e2be33746b9a": {
-          "product_name": "iPhone 5/5C/5S Nano Soft Explosion-proof membrane screen protector without retail packaging",
-          "price": "AU$2.20",
-          "price_value": "2.20",
-          "Public_price": "AU$2.53",
-          "product_url": "http://www.valueparts.com.au/parts-by-model/apple-iphone-parts/iphone-5c-parts/iphone-5-5c-5s-nano-soft-explosion-proof-membrane-screen-protector-without-retail-packaging.html",
-          "old_price": "AU$2.20",
-          "old_price_value": "2.20",
+        "9f425ec47e0821cefa70c2ae61a223f0": {
+          "product_name": "iPhone 4 back cover [Black]",
+          "price": "AU$4.14",
+          "price_value": "4.14",
+          "Public_price": "AU$4.75",
+          "product_url": "http://www.valueparts.com.au/parts-by-model/apple-iphone-parts/iphone-4-parts/iphone-4-back-cover-black.html",
+          "old_price": "AU$4.14",
+          "old_price_value": "4.14",
           "is_changed": false,
-          "diff": 0
+          "diff": "0.00"
         },
-        "0c1af9a52b76e77003504c99cc45e4fb": {
-          "product_name": "iPhone 5C Battery",
-          "price": "AU$11.51",
-          "price_value": "11.51",
-          "Public_price": "AU$13.22",
-          "product_url": "http://www.valueparts.com.au/parts-by-model/apple-iphone-parts/iphone-5c-parts/iphone-5c-battery.html",
-          "old_price": "AU$11.51",
-          "old_price_value": "11.51",
+        "253df50f0082a988b2ad902cd3cca562": {
+          "product_name": "iPhone 4 back cover [White] ",
+          "price": "AU$4.14",
+          "price_value": "4.14",
+          "Public_price": "AU$4.75",
+          "product_url": "http://www.valueparts.com.au/parts-by-model/apple-iphone-parts/iphone-4-parts/iphone-4-back-cover-white.html",
+          "old_price": "AU$4.14",
+          "old_price_value": "4.14",
           "is_changed": false,
-          "diff": 0
+          "diff": "0.00"
         },
-        "da634c97ac009c5a84f1d1852e74962e": {
-          "product_name": "iPhone 5C bottom 2 screws",
-          "price": "AU$0.54",
-          "price_value": "0.54",
-          "Public_price": "AU$0.62",
-          "product_url": "http://www.valueparts.com.au/parts-by-model/apple-iphone-parts/iphone-5c-parts/iphone-5c-bottom-2-screws.html",
-          "old_price": "AU$0.54",
-          "old_price_value": "0.54",
+        "e5d17275be79c2901a237382bedb3fad": {
+          "product_name": "iPhone 4 battery",
+          "price": "AU$14.11",
+          "price_value": "14.11",
+          "Public_price": "AU$16.21",
+          "product_url": "http://www.valueparts.com.au/parts-by-model/apple-iphone-parts/iphone-4-parts/iphone-4-battery.html",
+          "old_price": "AU$14.11",
+          "old_price_value": "14.11",
           "is_changed": false,
-          "diff": 0
+          "diff": "0.00"
         },
-        "1932e5023819e30f53aced659ff6cf57": {
-          "product_name": "iPhone 5C charging port and handsfree port flex cable [Black]",
-          "price": "AU$5.50",
-          "price_value": "5.50",
-          "Public_price": "AU$6.31",
-          "product_url": "http://www.valueparts.com.au/parts-by-model/apple-iphone-parts/iphone-5c-parts/iphone-5c-charging-port-and-handsfree-port-flex-cable-black.html",
-          "old_price": "AU$5.50",
-          "old_price_value": "5.50",
-          "is_changed": false,
-          "diff": 0
-        },
-        "21db24d01bba8b061fc7c1c0c1bddfe3": {
-          "product_name": "iPhone 5C Earpiece Metal Holder",
-          "price": "AU$1.10",
-          "price_value": "1.10",
-          "Public_price": "AU$1.25",
-          "product_url": "http://www.valueparts.com.au/parts-by-model/apple-iphone-parts/iphone-5c-parts/iphone-5c-earpiece-metal-holder.html",
-          "old_price": "AU$1.10",
-          "old_price_value": "1.10",
-          "is_changed": false,
-          "diff": 0
-        },
-        "3d78814fe84af30ed53bee8c72f714d4": {
-          "product_name": "iPhone 5C Earpiece Speaker",
-          "price": "AU$1.76",
-          "price_value": "1.76",
-          "Public_price": "AU$2.02",
-          "product_url": "http://www.valueparts.com.au/parts-by-model/apple-iphone-parts/iphone-5c-parts/iphone-5c-earpiece-speaker.html",
-          "old_price": "AU$1.76",
-          "old_price_value": "1.76",
-          "is_changed": false,
-          "diff": 0
-        },
-        "ce2d10d20899ed946ea22ec7b3e2ecec": {
-          "product_name": "iPhone 5C Front Camera with Proximity Sensor Cable Assembly",
-          "price": "AU$6.78",
-          "price_value": "6.78",
-          "Public_price": "AU$7.79",
-          "product_url": "http://www.valueparts.com.au/parts-by-model/apple-iphone-parts/iphone-5c-parts/iphone-5c-front-camera-with-proximity-sensor-cable-assembled.html",
-          "old_price": "AU$6.78",
-          "old_price_value": "6.78",
-          "is_changed": false,
-          "diff": 0
-        },
-        "da7c3df58b5e90714ee868b583c4c20d": {
-          "product_name": "iPhone 5C Home Button [Black]",
-          "price": "AU$1.91",
-          "price_value": "1.91",
-          "Public_price": "AU$2.20",
-          "product_url": "http://www.valueparts.com.au/parts-by-model/apple-iphone-parts/iphone-5c-parts/iphone-5c-home-button-black.html",
-          "old_price": "AU$1.91",
-          "old_price_value": "1.91",
-          "is_changed": false,
-          "diff": 0
-        },
-        "d0b69374628c8f2ff0cee49cd0ac6f58": {
-          "product_name": "iPhone 5C home button flex cable",
-          "price": "AU$1.35",
-          "price_value": "1.35",
-          "Public_price": "AU$1.56",
-          "product_url": "http://www.valueparts.com.au/parts-by-model/apple-iphone-parts/iphone-5c-parts/iphone-5c-home-button-flex-cable.html",
-          "old_price": "AU$1.35",
-          "old_price_value": "1.35",
-          "is_changed": false,
-          "diff": 0
-        },
-        "7ad6c08683b04d0f436d03cc653cf993": {
-          "product_name": "iPhone 5C Home Button Metal Holder",
+        "958f12645c473a14725a8c8bbddee69f": {
+          "product_name": "iPhone 4 battery connector",
           "price": "AU$1.03",
           "price_value": "1.03",
           "Public_price": "AU$1.19",
-          "product_url": "http://www.valueparts.com.au/parts-by-model/apple-iphone-parts/iphone-5c-parts/iphone-5c-home-button-metal-holder.html",
+          "product_url": "http://www.valueparts.com.au/parts-by-model/apple-iphone-parts/iphone-4-parts/iphone-4-battery-connector.html",
           "old_price": "AU$1.03",
           "old_price_value": "1.03",
           "is_changed": false,
-          "diff": 0
+          "diff": "0.00"
         },
-        "fd6ac291747dc05c74f2ee36142553bb": {
-          "product_name": "iPhone 5C Housing with charging port and power volume flex cable [Blue]",
-          "price": "AU$33.45",
-          "price_value": "33.45",
-          "Public_price": "AU$38.43",
-          "product_url": "http://www.valueparts.com.au/parts-by-model/apple-iphone-parts/iphone-5c-parts/iphone-5c-housing-blue.html",
-          "old_price": "AU$33.45",
-          "old_price_value": "33.45",
+        "83fa02e2a08b10638663fc51881513eb": {
+          "product_name": "iPhone 4 bottom antenna cable",
+          "price": "AU$8.27",
+          "price_value": "8.27",
+          "Public_price": "AU$9.50",
+          "product_url": "http://www.valueparts.com.au/parts-by-model/apple-iphone-parts/iphone-4-parts/iphone-4-bottom-antenna-cable.html",
+          "old_price": "AU$8.27",
+          "old_price_value": "8.27",
           "is_changed": false,
-          "diff": 0
+          "diff": "0.00"
         },
-        "6dc2e9577253ea430906b872b1ce1c36": {
-          "product_name": "iPhone 5C Housing with charging port and power volume flex cable [Red]",
-          "price": "AU$28.05",
-          "price_value": "28.05",
-          "Public_price": "AU$32.23",
-          "product_url": "http://www.valueparts.com.au/parts-by-model/apple-iphone-parts/iphone-5c-parts/iphone-5c-housing-red.html",
-          "old_price": "AU$28.05",
-          "old_price_value": "28.05",
+        "772692698686dab8fd8223340a1c20c8": {
+          "product_name": "iPhone 4 charging port flex cable with mic [Black]",
+          "price": "AU$4.87",
+          "price_value": "4.87",
+          "Public_price": "AU$5.60",
+          "product_url": "http://www.valueparts.com.au/parts-by-model/apple-iphone-parts/iphone-4-parts/iphone-4-charging-port-flex-cable-with-mic-black.html",
+          "old_price": "AU$4.87",
+          "old_price_value": "4.87",
           "is_changed": false,
-          "diff": 0
+          "diff": "0.00"
         },
-        "d31d0ed79de87ef70d2b8ff7cceb8235": {
-          "product_name": "iPhone 5C Housing with charging port and power volume flex cable [White]",
-          "price": "AU$33.45",
-          "price_value": "33.45",
-          "Public_price": "AU$38.43",
-          "product_url": "http://www.valueparts.com.au/parts-by-model/apple-iphone-parts/iphone-5c-parts/iphone-5c-housing-white.html",
-          "old_price": "AU$33.45",
-          "old_price_value": "33.45",
+        "7782170f9a9435951c079202b4eac07e": {
+          "product_name": "iPhone 4 charging port flex cable with mic [White]",
+          "price": "AU$7.52",
+          "price_value": "7.52",
+          "Public_price": "AU$8.64",
+          "product_url": "http://www.valueparts.com.au/parts-by-model/apple-iphone-parts/iphone-4-parts/iphone-4-charging-port-flex-cable-with-mic-white.html",
+          "old_price": "AU$7.52",
+          "old_price_value": "7.52",
           "is_changed": false,
-          "diff": 0
+          "diff": "0.00"
         },
-        "2187fe3b997d9cca12e9ea7dc5aae944": {
-          "product_name": "iPhone 5C LCD and Touch Screen Assembly [Black] [High Quality]",
-          "price": "AU$39.93",
-          "price_value": "39.93",
-          "Public_price": "AU$45.88",
-          "product_url": "http://www.valueparts.com.au/parts-by-model/apple-iphone-parts/iphone-5c-parts/iphone-5c-lcd-and-touch-screen-assembly-black.html",
-          "old_price": "AU$39.93",
-          "old_price_value": "39.93",
+        "765bca2d8fce4d5b1f7c7eeb45582b36": {
+          "product_name": "iPhone 4 earpiece speaker",
+          "price": "AU$1.03",
+          "price_value": "1.03",
+          "Public_price": "AU$1.19",
+          "product_url": "http://www.valueparts.com.au/parts-by-model/apple-iphone-parts/iphone-4-parts/iphone-4-earpiece-speaker.html",
+          "old_price": "AU$1.03",
+          "old_price_value": "1.03",
           "is_changed": false,
-          "diff": 0
+          "diff": "0.00"
         },
-        "3f7a19c5d64bfc361b92c5553b6368b6": {
-          "product_name": "iPhone 5C LCD and Touch Screen Assembly [Black] [Normal Quality with original LED]",
-          "price": "AU$39.60",
-          "price_value": "39.60",
-          "Public_price": "AU$45.10",
-          "product_url": "http://www.valueparts.com.au/parts-by-model/apple-iphone-parts/iphone-5c-parts/iphone-5c-lcd-and-touch-screen-assembly-black-oem-lcd-aftermarket-touch.html",
-          "old_price": "AU$39.60",
-          "old_price_value": "39.60",
+        "eac7151dc4d93911c39bf9b362046922": {
+          "product_name": "iPhone 4 front small camera with flex cable",
+          "price": "AU$4.14",
+          "price_value": "4.14",
+          "Public_price": "AU$4.75",
+          "product_url": "http://www.valueparts.com.au/parts-by-model/apple-iphone-parts/iphone-4-parts/iphone-4-front-small-camera-module.html",
+          "old_price": "AU$4.14",
+          "old_price_value": "4.14",
           "is_changed": false,
-          "diff": 0
+          "diff": "0.00"
         },
-        "08195d8ec981c25e57775dd880bcf9d8": {
-          "product_name": "iPhone 5C LCD Metal Plate",
-          "price": "AU$2.97",
-          "price_value": "2.97",
-          "Public_price": "AU$3.41",
-          "product_url": "http://www.valueparts.com.au/parts-by-model/apple-iphone-parts/iphone-5c-parts/iphone-5c-lcd-metal-plate.html",
-          "old_price": "AU$2.97",
-          "old_price_value": "2.97",
+        "9014bc45861ab22486fcd201e0d4a37e": {
+          "product_name": "iPhone 4 home button [Black]",
+          "price": "AU$1.03",
+          "price_value": "1.03",
+          "Public_price": "AU$1.19",
+          "product_url": "http://www.valueparts.com.au/parts-by-model/apple-iphone-parts/iphone-4-parts/iphone-4-home-button-black.html",
+          "old_price": "AU$1.03",
+          "old_price_value": "1.03",
           "is_changed": false,
-          "diff": 0
+          "diff": "0.00"
         },
-        "8b5780746fc01f57cddf2313e3500c3d": {
-          "product_name": "iPhone 5C LCD Touch Screen Assembly [Black] [Aftermarket with original touch and IC]",
-          "price": "AU$27.56",
-          "price_value": "27.56",
-          "Public_price": "AU$31.66",
-          "product_url": "http://www.valueparts.com.au/parts-by-model/apple-iphone-parts/iphone-5c-parts/iphone-5c-lcd-touch-screen-assembly-black-aftermarket-with-original-touch-and-ic.html",
-          "old_price": "AU$27.56",
-          "old_price_value": "27.56",
+        "d737a0c631d5aef90110d86d5bb8880a": {
+          "product_name": "iPhone 4 home button [White]",
+          "price": "AU$1.03",
+          "price_value": "1.03",
+          "Public_price": "AU$1.19",
+          "product_url": "http://www.valueparts.com.au/parts-by-model/apple-iphone-parts/iphone-4-parts/iphone-4-home-button-white.html",
+          "old_price": "AU$1.03",
+          "old_price_value": "1.03",
           "is_changed": false,
-          "diff": 0
+          "diff": "0.00"
         },
-        "8c48496c670959c91abb9f9fffd53b24": {
-          "product_name": "iPhone 5C Metal Holder for Battery Connector",
-          "price": "AU$0.90",
-          "price_value": "0.90",
-          "Public_price": "AU$1.03",
-          "product_url": "http://www.valueparts.com.au/parts-by-model/apple-iphone-parts/iphone-5c-parts/iphone-5c-metal-holder-for-battery-connector.html",
-          "old_price": "AU$0.90",
-          "old_price_value": "0.90",
+        "376cc217a7341a993ee232bb66349f9c": {
+          "product_name": "iPhone 4 home button cable",
+          "price": "AU$1.03",
+          "price_value": "1.03",
+          "Public_price": "AU$1.19",
+          "product_url": "http://www.valueparts.com.au/parts-by-model/apple-iphone-parts/iphone-4-parts/iphone-4-home-button-cable.html",
+          "old_price": "AU$1.03",
+          "old_price_value": "1.03",
           "is_changed": false,
-          "diff": 0
+          "diff": "0.00"
         },
-        "4f067914222b6f5ca63566a7f5118e71": {
-          "product_name": "iPhone 5C Metal Holder for Screen Cables Connectors",
+        "a23949e521407bd3df53d7dbdeedb247": {
+          "product_name": "iPhone 4 LCD and touch screen assembly [Black] [Aftermarket Display LCD]",
+          "price": "AU$18.72",
+          "price_value": "18.72",
+          "Public_price": "AU$21.51",
+          "product_url": "http://www.valueparts.com.au/parts-by-model/apple-iphone-parts/iphone-4-parts/iphone-4-lcd-and-touch-screen-assembly-black.html",
+          "old_price": "AU$18.72",
+          "old_price_value": "18.72",
+          "is_changed": false,
+          "diff": "0.00"
+        },
+        "e114b7a671f98f2b6bcc647743d4bb3a": {
+          "product_name": "iPhone 4 LCD and touch screen assembly [Black] [Normal Quality]",
+          "price": "AU$20.79",
+          "price_value": "20.79",
+          "Public_price": "AU$23.88",
+          "product_url": "http://www.valueparts.com.au/parts-by-model/apple-iphone-parts/iphone-4-parts/iphone-4-lcd-and-touch-screen-assembly-black-oem-sharp-lcd.html",
+          "old_price": "AU$20.79",
+          "old_price_value": "20.79",
+          "is_changed": false,
+          "diff": "0.00"
+        },
+        "31b56b7509b1d741f5fab83adce615aa": {
+          "product_name": "iPhone 4 LCD and Touch Screen Assembly [Orange] [Aftermarket]",
+          "price": "AU$22.40",
+          "price_value": "22.40",
+          "Public_price": "AU$25.73",
+          "product_url": "http://www.valueparts.com.au/parts-by-model/apple-iphone-parts/iphone-4-parts/iphone-4-lcd-and-touch-screen-assembly-orange-aftermarket.html",
+          "old_price": "AU$22.40",
+          "old_price_value": "22.40",
+          "is_changed": false,
+          "diff": "0.00"
+        },
+        "736cd689f166bf56d269068cc45035b3": {
+          "product_name": "iPhone 4 LCD and Touch Screen Assembly [Silver] [Aftermarket]",
+          "price": "AU$22.40",
+          "price_value": "22.40",
+          "Public_price": "AU$25.73",
+          "product_url": "http://www.valueparts.com.au/parts-by-model/apple-iphone-parts/iphone-4-parts/iphone-4-lcd-and-touch-screen-assembly-silver-aftermarket.html",
+          "old_price": "AU$22.40",
+          "old_price_value": "22.40",
+          "is_changed": false,
+          "diff": "0.00"
+        },
+        "f23f5dc36822bbdcd4421dc67a6eca4b": {
+          "product_name": "iPhone 4 LCD and Touch Screen Assembly [White Panther Skin] [Aftermarket]",
+          "price": "AU$22.40",
+          "price_value": "22.40",
+          "Public_price": "AU$25.73",
+          "product_url": "http://www.valueparts.com.au/parts-by-model/apple-iphone-parts/iphone-4-parts/iphone-4-lcd-and-touch-screen-assembly-white-panther-skin-aftermarket.html",
+          "old_price": "AU$22.40",
+          "old_price_value": "22.40",
+          "is_changed": false,
+          "diff": "0.00"
+        },
+        "4f935b89de07faaecceb55a46d7e513c": {
+          "product_name": "iPhone 4 LCD and touch screen assembly [White] [Aftermarket Display LCD]",
+          "price": "AU$18.72",
+          "price_value": "18.72",
+          "Public_price": "AU$21.51",
+          "product_url": "http://www.valueparts.com.au/parts-by-model/apple-iphone-parts/iphone-4-parts/iphone-4-lcd-and-touch-screen-assembly-white.html",
+          "old_price": "AU$18.72",
+          "old_price_value": "18.72",
+          "is_changed": false,
+          "diff": "0.00"
+        },
+        "bf9f0758f095a2cf687c5c0368c1ecab": {
+          "product_name": "iPhone 4 LCD and touch screen assembly [White] [Normal Quality]",
+          "price": "AU$20.79",
+          "price_value": "20.79",
+          "Public_price": "AU$23.88",
+          "product_url": "http://www.valueparts.com.au/parts-by-model/apple-iphone-parts/iphone-4-parts/iphone-4-lcd-and-touch-screen-assembly-white-oem-sharp-lcd.html",
+          "old_price": "AU$20.79",
+          "old_price_value": "20.79",
+          "is_changed": false,
+          "diff": "0.00"
+        },
+        "32e3549a41c4da85976090547c7def59": {
+          "product_name": "iPhone 4 metal plates for holding the cables 3 pieces",
+          "price": "AU$3.10",
+          "price_value": "3.10",
+          "Public_price": "AU$3.56",
+          "product_url": "http://www.valueparts.com.au/parts-by-model/apple-iphone-parts/iphone-4-parts/iphone-4-metal-plates-for-holding-the-cables-3-pieces.html",
+          "old_price": "AU$3.10",
+          "old_price_value": "3.10",
+          "is_changed": false,
+          "diff": "0.00"
+        },
+        "cfeddc96e3102edc29ba6a8bb02beb18": {
+          "product_name": "iPhone 4 middle frame with buttons and flex cables",
+          "price": "AU$31.02",
+          "price_value": "31.02",
+          "Public_price": "AU$35.64",
+          "product_url": "http://www.valueparts.com.au/parts-by-model/apple-iphone-parts/iphone-4-parts/iphone-4-middle-frame-with-cables.html",
+          "old_price": "AU$31.02",
+          "old_price_value": "31.02",
+          "is_changed": false,
+          "diff": "0.00"
+        },
+        "46f62196ac0b37f42674a5a4dfdca080": {
+          "product_name": "iPhone 4 power button flex cable with proximity sensor",
+          "price": "AU$4.65",
+          "price_value": "4.65",
+          "Public_price": "AU$5.35",
+          "product_url": "http://www.valueparts.com.au/parts-by-model/apple-iphone-parts/iphone-4-parts/iphone-4-power-button-flex-cable-with-proximity-sensor.html",
+          "old_price": "AU$4.65",
+          "old_price_value": "4.65",
+          "is_changed": false,
+          "diff": "0.00"
+        },
+        "373b23ec6cfceb59841de96d2571d27f": {
+          "product_name": "iPhone 4 proximity sticker x5",
+          "price": "AU$2.59",
+          "price_value": "2.59",
+          "Public_price": "AU$2.97",
+          "product_url": "http://www.valueparts.com.au/parts-by-model/apple-iphone-parts/iphone-4-parts/iphone-4-proximity-sticker.html",
+          "old_price": "AU$2.59",
+          "old_price_value": "2.59",
+          "is_changed": false,
+          "diff": "0.00"
+        },
+        "db65dfe82b7dbf3980d77a6e4361f0f0": {
+          "product_name": "iPhone 4 rear big camera with flex cable",
+          "price": "AU$4.46",
+          "price_value": "4.46",
+          "Public_price": "AU$5.12",
+          "product_url": "http://www.valueparts.com.au/parts-by-model/apple-iphone-parts/iphone-4-parts/iphone-4-rear-big-camera-module.html",
+          "old_price": "AU$4.46",
+          "old_price_value": "4.46",
+          "is_changed": false,
+          "diff": "0.00"
+        },
+        "baa5abd1f6983981cbb6ad07d17ee5f9": {
+          "product_name": "iPhone 4 ringer block with antena cable",
+          "price": "AU$4.14",
+          "price_value": "4.14",
+          "Public_price": "AU$4.75",
+          "product_url": "http://www.valueparts.com.au/parts-by-model/apple-iphone-parts/iphone-4-parts/iphone-4-ringer-block-with-antena-cable.html",
+          "old_price": "AU$4.14",
+          "old_price_value": "4.14",
+          "is_changed": false,
+          "diff": "0.00"
+        },
+        "b97494f356ee421388b71494cdbdc89a": {
+          "product_name": "iPhone 4 Screen Cable Metal Holder",
           "price": "AU$1.10",
           "price_value": "1.10",
-          "Public_price": "AU$1.25",
-          "product_url": "http://www.valueparts.com.au/parts-by-model/apple-iphone-parts/iphone-5c-parts/iphone-5c-metal-holder-for-screen-cables-connectors.html",
+          "Public_price": "AU$2.20",
+          "product_url": "http://www.valueparts.com.au/parts-by-model/apple-iphone-parts/iphone-4-parts/iphone-4-screen-cable-metal-holder.html",
           "old_price": "AU$1.10",
           "old_price_value": "1.10",
           "is_changed": false,
-          "diff": 0
+          "diff": "0.00"
         },
-        "7c708c4ca28c2a3a5bfd878c32014dcf": {
-          "product_name": "iPhone 5C power volume mute buttons [Blue]",
-          "price": "AU$2.07",
-          "price_value": "2.07",
-          "Public_price": "AU$2.38",
-          "product_url": "http://www.valueparts.com.au/parts-by-model/apple-iphone-parts/iphone-5c-parts/iphone-5c-power-volume-mute-buttons-blue.html",
-          "old_price": "AU$2.07",
-          "old_price_value": "2.07",
+        "9932c5c468826bcfed33bb078f94f233": {
+          "product_name": "iPhone 4 screw set",
+          "price": "AU$1.88",
+          "price_value": "1.88",
+          "Public_price": "AU$2.16",
+          "product_url": "http://www.valueparts.com.au/parts-by-model/apple-iphone-parts/iphone-4-parts/iphone-4-screw-set.html",
+          "old_price": "AU$1.88",
+          "old_price_value": "1.88",
           "is_changed": false,
-          "diff": 0
+          "diff": "0.00"
         },
-        "a25ed45f3d377d729ba95befd281c7e1": {
-          "product_name": "iPhone 5C power volume mute buttons [Green]",
-          "price": "AU$2.07",
-          "price_value": "2.07",
-          "Public_price": "AU$2.38",
-          "product_url": "http://www.valueparts.com.au/parts-by-model/apple-iphone-parts/iphone-5c-parts/iphone-5c-power-volume-mute-buttons-green.html",
-          "old_price": "AU$2.07",
-          "old_price_value": "2.07",
+        "99d81d5d50730d0e291e97501057e88c": {
+          "product_name": "iPhone 4 Side Buttons Volume Mute Power Button",
+          "price": "AU$1.88",
+          "price_value": "1.88",
+          "Public_price": "AU$2.16",
+          "product_url": "http://www.valueparts.com.au/parts-by-model/apple-iphone-parts/iphone-4-parts/iphone-4-side-keys-3-pieces-volume-mute-power-button.html",
+          "old_price": "AU$1.88",
+          "old_price_value": "1.88",
           "is_changed": false,
-          "diff": 0
+          "diff": "0.00"
         },
-        "a76bbc8063e97165ce6900f4ad72e8ec": {
-          "product_name": "iPhone 5C power volume mute buttons [Red]",
-          "price": "AU$2.07",
-          "price_value": "2.07",
-          "Public_price": "AU$2.38",
-          "product_url": "http://www.valueparts.com.au/parts-by-model/apple-iphone-parts/iphone-5c-parts/iphone-5c-power-volume-mute-buttons-red.html",
-          "old_price": "AU$2.07",
-          "old_price_value": "2.07",
-          "is_changed": false,
-          "diff": 0
-        },
-        "28fc94d494aa70c0709fc076d6f37530": {
-          "product_name": "iPhone 5C power volume mute buttons [White]",
-          "price": "AU$2.07",
-          "price_value": "2.07",
-          "Public_price": "AU$2.38",
-          "product_url": "http://www.valueparts.com.au/parts-by-model/apple-iphone-parts/iphone-5c-parts/iphone-5c-power-volume-mute-buttons-white.html",
-          "old_price": "AU$2.07",
-          "old_price_value": "2.07",
-          "is_changed": false,
-          "diff": 0
-        },
-        "cabc674c34f7be2668733de7bf2e4972": {
-          "product_name": "iPhone 5C power volume mute buttons [Yellow]",
-          "price": "AU$2.07",
-          "price_value": "2.07",
-          "Public_price": "AU$2.38",
-          "product_url": "http://www.valueparts.com.au/parts-by-model/apple-iphone-parts/iphone-5c-parts/iphone-5c-power-volume-mute-buttons-yellow.html",
-          "old_price": "AU$2.07",
-          "old_price_value": "2.07",
-          "is_changed": false,
-          "diff": 0
-        },
-        "c7958064df5ce204da955f5ae0988689": {
-          "product_name": "iPhone 5C Power Volume Mute Buttons Flex Cable",
-          "price": "AU$6.58",
-          "price_value": "6.58",
-          "Public_price": "AU$7.56",
-          "product_url": "http://www.valueparts.com.au/parts-by-model/apple-iphone-parts/iphone-5c-parts/iphone-5c-power-volume-mute-buttons-flex-cable.html",
-          "old_price": "AU$6.58",
-          "old_price_value": "6.58",
-          "is_changed": false,
-          "diff": 0
-        },
-        "eaed8b6947c9605d24d4c2d04fd5921f": {
-          "product_name": "iPhone 5C Rear Camera",
-          "price": "AU$6.16",
-          "price_value": "6.16",
-          "Public_price": "AU$7.07",
-          "product_url": "http://www.valueparts.com.au/parts-by-model/apple-iphone-parts/iphone-5c-parts/iphone-5c-rear-camera.html",
-          "old_price": "AU$6.16",
-          "old_price_value": "6.16",
-          "is_changed": false,
-          "diff": 0
-        },
-        "05b2c7a06868eb27e9927335bbfab62f": {
-          "product_name": "iPhone 5C Ringer Block",
-          "price": "AU$2.97",
-          "price_value": "2.97",
-          "Public_price": "AU$3.41",
-          "product_url": "http://www.valueparts.com.au/parts-by-model/apple-iphone-parts/iphone-5c-parts/iphone-5c-ringer-block.html",
-          "old_price": "AU$2.97",
-          "old_price_value": "2.97",
-          "is_changed": false,
-          "diff": 0
-        },
-        "44cb64db5f704c8da878d18bae35a0cd": {
-          "product_name": "iPhone 5C Screw Set",
-          "price": "AU$1.36",
-          "price_value": "1.36",
-          "Public_price": "AU$1.56",
-          "product_url": "http://www.valueparts.com.au/parts-by-model/apple-iphone-parts/iphone-5c-parts/iphone-5c-screw-set.html",
-          "old_price": "AU$1.36",
-          "old_price_value": "1.36",
-          "is_changed": false,
-          "diff": 0
-        },
-        "ab156582bf6b40ab9358bbb593fb9c93": {
-          "product_name": "iPhone 5C Sim Card Tray [Blue]",
-          "price": "AU$1.65",
-          "price_value": "1.65",
-          "Public_price": "AU$1.89",
-          "product_url": "http://www.valueparts.com.au/parts-by-model/apple-iphone-parts/iphone-5c-parts/iphone-5c-sim-card-tray-blue.html",
-          "old_price": "AU$1.65",
-          "old_price_value": "1.65",
-          "is_changed": false,
-          "diff": 0
-        },
-        "c10c570dc3452ffc27a8ce351068d066": {
-          "product_name": "iPhone 5C Sim Card Tray [Green]",
-          "price": "AU$1.76",
-          "price_value": "1.76",
-          "Public_price": "AU$2.02",
-          "product_url": "http://www.valueparts.com.au/parts-by-model/apple-iphone-parts/iphone-5c-parts/iphone-5c-sim-card-tray-green.html",
-          "old_price": "AU$1.76",
-          "old_price_value": "1.76",
-          "is_changed": false,
-          "diff": 0
-        },
-        "28d285c24e6f56a06d9f8bee239e5662": {
-          "product_name": "iPhone 5C Sim Card Tray [Red]",
+        "d057d268cf02a1e1f4dc6563ac83764d": {
+          "product_name": "iPhone 4 vibrator",
           "price": "AU$3.10",
           "price_value": "3.10",
           "Public_price": "AU$3.56",
-          "product_url": "http://www.valueparts.com.au/parts-by-model/apple-iphone-parts/iphone-5c-parts/iphone-5c-sim-card-tray-red.html",
+          "product_url": "http://www.valueparts.com.au/parts-by-model/apple-iphone-parts/iphone-4-parts/iphone-4-vibrator.html",
           "old_price": "AU$3.10",
           "old_price_value": "3.10",
           "is_changed": false,
-          "diff": 0
+          "diff": "0.00"
         },
-        "d8cb0e289df8892127ac89af7569ea9a": {
-          "product_name": "iPhone 5C Sim Card Tray [White]",
-          "price": "AU$1.29",
-          "price_value": "1.29",
-          "Public_price": "AU$1.47",
-          "product_url": "http://www.valueparts.com.au/parts-by-model/apple-iphone-parts/iphone-5c-parts/iphone-5c-sim-card-tray-white.html",
-          "old_price": "AU$1.29",
-          "old_price_value": "1.29",
+        "21519d0f30f7e605aea2dc1d1bb2a5fd": {
+          "product_name": "iPhone 4 volume button flex cable with handsfree port [Black]",
+          "price": "AU$4.14",
+          "price_value": "4.14",
+          "Public_price": "AU$4.75",
+          "product_url": "http://www.valueparts.com.au/parts-by-model/apple-iphone-parts/iphone-4-parts/iphone-4-volume-button-flex-cable-with-handsfree-port-black.html",
+          "old_price": "AU$4.14",
+          "old_price_value": "4.14",
           "is_changed": false,
-          "diff": 0
+          "diff": "0.00"
         },
-        "affd30c8f2d68b76c0ced94a3fc4a8b4": {
-          "product_name": "iPhone 5C Sim Card Tray [Yellow]",
-          "price": "AU$3.10",
-          "price_value": "3.10",
-          "Public_price": "AU$3.56",
-          "product_url": "http://www.valueparts.com.au/parts-by-model/apple-iphone-parts/iphone-5c-parts/iphone-5c-sim-card-tray-yellow.html",
-          "old_price": "AU$3.10",
-          "old_price_value": "3.10",
+        "7e0ba9a2e2d0721c560bd5e1ab3642ce": {
+          "product_name": "iPhone 4 volume button flex cable with handsfree port [White]",
+          "price": "AU$3.08",
+          "price_value": "3.08",
+          "Public_price": "AU$3.54",
+          "product_url": "http://www.valueparts.com.au/parts-by-model/apple-iphone-parts/iphone-4-parts/iphone-4-volume-button-flex-cable-with-handsfree-port-white.html",
+          "old_price": "AU$3.08",
+          "old_price_value": "3.08",
           "is_changed": false,
-          "diff": 0
+          "diff": "0.00"
         },
-        "631120b4920de559628731c27fd330c9": {
-          "product_name": "iPhone 5C Vibrator",
-          "price": "AU$5.17",
-          "price_value": "5.17",
-          "Public_price": "AU$5.94",
-          "product_url": "http://www.valueparts.com.au/parts-by-model/apple-iphone-parts/iphone-5c-parts/iphone-5c-vibrator.html",
-          "old_price": "AU$5.17",
-          "old_price_value": "5.17",
+        "290aa56a3e64e52d0e7f029f10620db6": {
+          "product_name": "iPhone 4/4S battery sticker",
+          "price": "AU$1.55",
+          "price_value": "1.55",
+          "Public_price": "AU$1.78",
+          "product_url": "http://www.valueparts.com.au/parts-by-model/apple-iphone-parts/iphone-4-parts/iphone-4-battery-sticker.html",
+          "old_price": "AU$1.55",
+          "old_price_value": "1.55",
           "is_changed": false,
-          "diff": 0
+          "diff": "0.00"
         },
-        "d41e8c0665d682b7ee6afa26ecee3675": {
-          "product_name": "iPhone 5C WiFi flex cable",
-          "price": "AU$2.13",
-          "price_value": "2.13",
-          "Public_price": "AU$2.45",
-          "product_url": "http://www.valueparts.com.au/parts-by-model/apple-iphone-parts/iphone-5c-parts/iphone-5c-wifi-flex-cable.html",
-          "old_price": "AU$2.13",
-          "old_price_value": "2.13",
+        "8cbb3a40dd369a98cc85c7f5d6e5fff9": {
+          "product_name": "iPhone 4/4S Bottom 2 Screws",
+          "price": "AU$1.03",
+          "price_value": "1.03",
+          "Public_price": "AU$1.19",
+          "product_url": "http://www.valueparts.com.au/parts-by-model/apple-iphone-parts/iphone-4-parts/iphone-4-bottom-screws-pentalobe.html",
+          "old_price": "AU$1.03",
+          "old_price_value": "1.03",
           "is_changed": false,
-          "diff": 0
+          "diff": "0.00"
         },
-        "2dd91f42c9d5015cdf93c4e51f0c6a9d": {
-          "product_name": "Iphone Lightning to USB Cable [Original]",
-          "price": "AU$5.93",
-          "price_value": "5.93",
-          "Public_price": "AU$6.82",
-          "product_url": "http://www.valueparts.com.au/parts-by-model/apple-iphone-parts/iphone-5c-parts/apple-lightning-to-usb-cable-original.html",
-          "old_price": "AU$5.93",
-          "old_price_value": "5.93",
+        "5337fd3c89de07c2e228a399f65cff75": {
+          "product_name": "iPhone 4/4S earpiece mesh 3 in 1 [Original] x5",
+          "price": "AU$2.33",
+          "price_value": "2.33",
+          "Public_price": "AU$2.67",
+          "product_url": "http://www.valueparts.com.au/parts-by-model/apple-iphone-parts/iphone-4-parts/iphone-4-three-pieces-of-dust-mesh.html",
+          "old_price": "AU$2.33",
+          "old_price_value": "2.33",
           "is_changed": false,
-          "diff": 0
+          "diff": "0.00"
         },
-        "750f88290837a1f560a6adcabb8a9c9f": {
-          "product_name": "iPhone/iPod/iPad handsfree [Apple]",
-          "price": "AU$13.04",
-          "price_value": "13.04",
-          "Public_price": "AU$14.97",
-          "product_url": "http://www.valueparts.com.au/parts-by-model/apple-iphone-parts/iphone-5c-parts/iphone-5-handsfree-original-1650088632.html",
-          "old_price": "AU$13.04",
-          "old_price_value": "13.04",
+        "47295ddf6c77e44ffffa9d4376fdc262": {
+          "product_name": "iPhone 4/4S SIM card tray",
+          "price": "AU$1.03",
+          "price_value": "1.03",
+          "Public_price": "AU$1.19",
+          "product_url": "http://www.valueparts.com.au/parts-by-model/apple-iphone-parts/iphone-4-parts/iphone-4-sim-card-tray.html",
+          "old_price": "AU$1.03",
+          "old_price_value": "1.03",
           "is_changed": false,
-          "diff": 0
+          "diff": "0.00"
         },
-        "3b97800194c2cfefbef3d047553a4f88": {
+        "659a5258e6eda6f086f777fbcb15cd85": {
           "product_name": "Micro Spring Terminal for Power Volume Button Flex Cables on iPhone 4 4S x5pcs",
           "price": "AU$2.20",
           "price_value": "2.20",
           "Public_price": "AU$2.53",
-          "product_url": "http://www.valueparts.com.au/parts-by-model/apple-iphone-parts/iphone-5c-parts/micro-spring-terminal-for-power-volume-button-flex-cables-on-iphone-4-4s-x5pcs.html",
+          "product_url": "http://www.valueparts.com.au/parts-by-model/apple-iphone-parts/iphone-4-parts/micro-spring-terminal-for-power-volume-button-flex-cables-on-iphone-4-4s-x5pcs.html",
           "old_price": "AU$2.20",
           "old_price_value": "2.20",
           "is_changed": false,
-          "diff": 0
+          "diff": "0.00"
         },
-        "4407cb4fd76dfc2dd0fddf39b6c8df8f": {
+        "c2fa1d511c73ce9ad54eb6ab0c0bb1e7": {
           "product_name": "Opening tool GB-5A Stainless disassemble stick ultrathin for iPhone and iPad",
           "price": "AU$2.23",
           "price_value": "2.23",
           "Public_price": "AU$2.56",
-          "product_url": "http://www.valueparts.com.au/parts-by-model/apple-iphone-parts/iphone-5c-parts/opening-tool-gb-5a-stainless-disassemble-stick-ultrathin-for-iphone-and-ipad.html",
+          "product_url": "http://www.valueparts.com.au/parts-by-model/apple-iphone-parts/iphone-4-parts/opening-tool-gb-5a-stainless-disassemble-stick-ultrathin-for-iphone-and-ipad.html",
           "old_price": "AU$2.23",
           "old_price_value": "2.23",
           "is_changed": false,
-          "diff": 0
+          "diff": "0.00"
         },
-        "2a0b48e15c8a25ac49ca654ef340b586": {
-          "product_name": "Optically Clear Adhesive OCA for iPhone 5/5C/5S 200uM",
-          "price": "AU$1.05",
-          "price_value": "1.05",
-          "Public_price": "AU$1.19",
-          "product_url": "http://www.valueparts.com.au/parts-by-model/apple-iphone-parts/iphone-5c-parts/optically-clear-adhesive-oca-for-iphone-5-5c-5s-200um.html",
-          "old_price": "AU$1.05",
-          "old_price_value": "1.05",
+        "9ad1ee2e6d75265e3d278efc13bc7181": {
+          "product_name": "Screen Testing Cable for iPhone 4/4S",
+          "price": "AU$6.27",
+          "price_value": "6.27",
+          "Public_price": "AU$7.13",
+          "product_url": "http://www.valueparts.com.au/parts-by-model/apple-iphone-parts/iphone-4-parts/screen-testing-cable-for-iphone-4-4s.html",
+          "old_price": "AU$6.27",
+          "old_price_value": "6.27",
           "is_changed": false,
-          "diff": 0
+          "diff": "0.00"
         },
-        "38c8d9285e317bae5cfe5244527be60a": {
-          "product_name": "Tempered Glass Screen Protector for iPhone 5/5C/5S",
-          "price": "AU$2.15",
-          "price_value": "2.15",
-          "Public_price": "AU$2.53",
-          "product_url": "http://www.valueparts.com.au/parts-by-model/apple-iphone-parts/iphone-5c-parts/tempered-glass-screen-protector-for-iphone-5-5c-5s.html",
-          "old_price": "AU$2.15",
-          "old_price_value": "2.15",
+        "d8ef66de8d94682057198a54be6b9154": {
+          "product_name": "Tempered Glass Screen Protector for iPhone 4 / iPhone 4S",
+          "price": "AU$2.75",
+          "price_value": "2.75",
+          "Public_price": "AU$3.52",
+          "product_url": "http://www.valueparts.com.au/parts-by-model/apple-iphone-parts/iphone-4-parts/tempered-glass-screen-protector-for-iphone-4-4s.html",
+          "old_price": "AU$2.75",
+          "old_price_value": "2.75",
           "is_changed": false,
-          "diff": 0
-        },
-        "ada093ad9645fd8e66b65d90f7a08efe": {
-          "product_name": "Universal Car Charger Adaptor 2 USB Output 2.1A",
-          "price": "AU$5.69",
-          "price_value": "5.69",
-          "Public_price": "AU$6.53",
-          "product_url": "http://www.valueparts.com.au/parts-by-model/apple-iphone-parts/iphone-5c-parts/universal-car-charger-adaptor-2-usb-output-2-4a.html",
-          "old_price": "AU$5.69",
-          "old_price_value": "5.69",
-          "is_changed": false,
-          "diff": 0
+          "diff": "0.00"
         }
       }
     }
   },
   "meta_data": {
-    "last_update": "2018-5-20:07:47:18"
+    "last_update": "2018-5-20:08:11:49"
   }
 }
