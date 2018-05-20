@@ -2,7 +2,185 @@ const request = require('request');
 const cheerio = require('cheerio');
 const fs = require('fs');
 var crypto = require('crypto');
+var moment = require('moment');
 const pathToSourceJson = 'source.json';
+
+
+
+function getMobilehqData() {
+    var alldata = {};
+    var lastResponse = {};
+    return new Promise(async resolve => {
+
+        const baseURL = 'https://www.mobilehq.com.au/shop/by-brand/';
+
+        const request_data = (url, categoryid, id) => {
+            return new Promise(resolve => {
+
+
+                //enabling cookies #HANSITHA
+                let getOptions = {
+                    url: url,
+                    headers: {'User-agent':'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:49.0) Gecko/20100101 Firefox/49.0'},
+                    jar: true,
+                    followAllRedirects: true,
+
+                };
+
+                request.get(getOptions, (error, responce, html) => {
+
+                    let productdata = {};
+
+                    if ((categoryid in alldata)) {
+
+                        if((id in alldata[categoryid])){
+                            productdata = alldata[categoryid][id];
+						}
+                    }
+
+
+                    if (!error) {
+                        const $ = cheerio.load(html);
+                        const allitems = $('.products-grid li');
+
+                        allitems.each(function (index) {
+
+
+                            let productUrl = $(this).find('.product-name').find('a').attr('href');
+                            let productUrlHash = crypto.createHash('md5').update(productUrl).digest("hex");
+                            //var priceWithCurrncy = $(this).find('.price-box').text().replace(/(\r\n|\n|\r)/gm, '').trim();
+                            var priceWithCurrncy = "$0.00";
+                            let priceValue = priceWithCurrncy.split("$")[1];
+
+                            var oldPrice = priceWithCurrncy;
+                            var oldPriceValue = priceValue;
+                            var diff = '0.00';
+                            var isChanged = false;
+
+
+                            if(lastResponse[categoryid] != undefined && lastResponse[categoryid][id] != undefined){
+                                //if last reposne is not empty and record exists for this categoryid
+
+
+                                if(lastResponse[categoryid][id][productUrlHash]!=undefined){
+                                    //this is to avod  a new record added by WEBsite.
+
+                                    var lastResponseRecord = lastResponse[categoryid][id][productUrlHash];
+                                    oldPrice = lastResponseRecord.price;
+                                    oldPriceValue = lastResponseRecord.price_value;
+
+                                    diff = Number(priceValue)-Number(oldPriceValue);
+                                    if(diff!='0.00'){
+                                        isChanged = true;
+                                    }
+
+                                }
+
+
+                            }
+
+                            productdata[productUrlHash] ={
+                                'product_name': $(this).find('.product-name').find('a').attr('title').replace(/(\r\n|\n|\r)/gm, '').trim(),
+                                'price': priceWithCurrncy,
+                                'price_value': priceValue,
+                                "product_url" : productUrl,
+                                'old_price': oldPrice,
+                                'old_price_value': oldPriceValue,
+                                'is_changed':isChanged,
+
+                                'diff': diff
+                            };
+
+                        });
+
+
+
+                        if (!(categoryid in alldata)) {
+                            alldata[categoryid] = {};
+                        }
+                        alldata[categoryid][id]= productdata;
+
+
+                        //handling mulitple pages in a recursive way
+
+
+                        if($('.pages').length==2 && $('.next.i-next').length==2){
+
+                            const nextUrl = $(".next.i-next").attr('href');
+                            return resolve(nextUrl);
+
+			}
+			else {
+                            return resolve();
+
+                        }
+                    }
+                });
+            });
+        };
+
+        var supplierTargets = getTargetsForSupplier();
+
+        //reading Last Json file,
+		// TODO do we need to keep a separate last,json file for each supplier, may be it's a better solution #HANSITHA
+
+        try{
+            let rawdata = fs.readFileSync('last_mobilehq.json');
+            lastResponse = JSON.parse(rawdata).data;
+        }
+        catch(err){
+
+        }
+
+        console.log(supplierTargets);
+
+        for(let categoryid in supplierTargets){
+
+            let idArray = supplierTargets[categoryid];
+
+            for(let id in idArray){
+
+                if(idArray[id]['mobilehq_url']!=undefined && idArray[id]['mobilehq_url']!=''){
+
+                    console.log("processing "+baseURL+idArray[id]['mobilehq_url'], categoryid, id);
+
+
+
+                    let nextUrl = await request_data(baseURL+idArray[id]['mobilehq_url'], categoryid, id);
+
+                    while (nextUrl!=undefined){
+                        console.log("processing "+baseURL+idArray[id]['mobilehq_url'], categoryid, id);
+                        nextUrl = await request_data(nextUrl, categoryid, id);
+                    }
+                }
+
+
+            }
+        }
+	
+	let dataToWirte = {data:alldata,meta_data:{last_update:moment().format('Y-M-D:hh:mm:ss')}};
+	
+        fs.writeFile('Mobilehq.json', JSON.stringify(dataToWirte, null, 2), 'utf8', () => {
+            console.log('Data Saved');
+
+            fs.writeFile('last_mobilehq.json', JSON.stringify(dataToWirte, null, 2), 'utf8', () => {
+                console.log('Old Data Saved');
+
+                // Pass data to the parameter as bellow
+                return resolve(dataToWirte);
+            });
+
+        });
+
+    });
+}
+
+
+
+
+
+
+
 
 
 
@@ -233,7 +411,7 @@ function getJstechData() {
 
         try{
             let rawdata = fs.readFileSync('last_jstech.json');
-            lastResponse = JSON.parse(rawdata);
+            lastResponse = JSON.parse(rawdata).data;
         }
         catch(err){
 
@@ -276,15 +454,16 @@ function getJstechData() {
             }
         }
 
-        fs.writeFile('JstechParts.json', JSON.stringify(alldata, null, 2), 'utf8', () => {
+	let dataToWirte = {data:alldata,meta_data:{last_update:moment().format('Y-M-D:hh:mm:ss')}};
+        fs.writeFile('JstechParts.json', JSON.stringify(dataToWirte, null, 2), 'utf8', () => {
             console.log('Data Saved');
 
-            fs.writeFile('last_jstech.json', JSON.stringify(alldata, null, 2), 'utf8', () => {
+            fs.writeFile('last_jstech.json', JSON.stringify(dataToWirte, null, 2), 'utf8', () => {
                 console.log('Old Data Saved');
 
                 console.log(alldata);
                 // Pass data to the parameter as bellow
-                return resolve(alldata);
+                return resolve(dataToWirte);
             });
 
         });
@@ -410,7 +589,7 @@ function getHitechPartsData() {
 
         try{
             let rawdata = fs.readFileSync('last_hitech.json');
-            lastResponse = JSON.parse(rawdata);
+            lastResponse = JSON.parse(rawdata).data;
         }
         catch(err){
 
@@ -442,14 +621,15 @@ function getHitechPartsData() {
             }
         }
 
-        fs.writeFile('HitechParts.json', JSON.stringify(alldata, null, 2), 'utf8', () => {
+	let dataToWirte = {data:alldata,meta_data:{last_update:moment().format('Y-M-D:hh:mm:ss')}};
+        fs.writeFile('HitechParts.json', JSON.stringify(dataToWirte, null, 2), 'utf8', () => {
             console.log('Data Saved');
 
-            fs.writeFile('last_hitech.json', JSON.stringify(alldata, null, 2), 'utf8', () => {
+            fs.writeFile('last_hitech.json', JSON.stringify(dataToWirte, null, 2), 'utf8', () => {
                 console.log('Old Data Saved');
 
                 // Pass data to the parameter as bellow
-                return resolve(alldata);
+                return resolve(dataToWirte);
             });
 
         });
@@ -489,9 +669,9 @@ function getValuePartsData() {
 
 			    let productUrl = $(this).find('.name').find('a').attr('href');
 			    let productUrlHash = crypto.createHash('md5').update(productUrl).digest("hex");
-			    var priceWithCurrncy = $(this).find('.price').children().remove().end().text().replace(/(\r\n|\n|\r)/gm, '').trim();
-                            let priceValue = priceWithCurrncy.split("$")[1];
-			    
+                var priceWithCurrncy = $(this).find('.price').find('.price-new').text();
+                let priceValue = priceWithCurrncy.split("$")[1];
+                var publicPrice = $(this).find('.price').find('.price-old').text();
 			    var oldPrice = priceWithCurrncy;
 			    var oldPriceValue = priceValue;
 			    var diff = '0.00';
@@ -521,7 +701,8 @@ function getValuePartsData() {
 			    productdata[productUrlHash] ={
                                 'product_name': $(this).find('.name').find('a').text(),
                                 'price': priceWithCurrncy,
-				'price_value': priceValue,
+                'price_value': priceValue,
+                "Public_price" : publicPrice,
                                 "product_url" : productUrl,
 				'old_price': oldPrice,
 				'old_price_value': oldPriceValue,
@@ -548,7 +729,7 @@ function getValuePartsData() {
 
         try{
             let rawdata = fs.readFileSync('last.json');
-            lastResponse = JSON.parse(rawdata);
+            lastResponse = JSON.parse(rawdata).data;
         }
         catch(err){
 
@@ -572,14 +753,15 @@ function getValuePartsData() {
 			}
 	}
 
-        fs.writeFile('ValueParts.json', JSON.stringify(alldata, null, 2), 'utf8', () => {
+	let dataToWirte = {data:alldata,meta_data:{last_update:moment().format('Y-M-D:hh:mm:ss')}};
+        fs.writeFile('ValueParts.json', JSON.stringify(dataToWirte, null, 2), 'utf8', () => {
             console.log('Data Saved');
 	    
-	    fs.writeFile('last.json', JSON.stringify(alldata, null, 2), 'utf8', () => {
+	    fs.writeFile('last.json', JSON.stringify(dataToWirte, null, 2), 'utf8', () => {
             console.log('Old Data Saved');
 
             // Pass data to the parameter as bellow
-            return resolve(alldata);
+            return resolve(dataToWirte);
        	   });
 
         });
@@ -643,6 +825,9 @@ function getTargetsForSupplier(){
 	return formattedRawdata;
 }
 
+
+
+
 function LoginToJs(){
 
     return new Promise(resolve =>{
@@ -671,6 +856,46 @@ function LoginToJs(){
     });
 }
 
+
+function LoginToMobilehq(){
+
+    return new Promise(resolve =>{
+    
+    const EMAIL = '';
+    const PASSWORD = '';
+    const loginPageURL = 'https://www.mobilehq.com.au/customer/account/login';
+    const loginURL = 'https://www.mobilehq.com.au/customer/account/loginPost/'
+    
+    request.get(loginPageURL,function(error, response, body){
+
+	let $ = cheerio.load(body);
+	const formKey = $('input[name="form_key"]').attr('value');
+
+        var options = {
+	    url: loginURL,
+	    headers: {'User-agent':'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:49.0) Gecko/20100101 Firefox/49.0'},
+	    jar: true,
+	    followAllRedirects: true,
+	    form: {
+	    login:{'username':EMAIL,'password':PASSWORD,'rememberme': "on"},
+	    send: "",
+	    form_key: formKey
+		 }
+	    };
+        
+      request.post(options,function(error, response, body) {
+    
+    	return resolve(getMobilehqData());
+    
+    	});
+
+    });
+
+    
+});
+}
+
+
 exports.update = async (req, res) => {
 
 
@@ -688,6 +913,9 @@ exports.update = async (req, res) => {
 	case 'jstech':
 	  data =  await LoginToJs();
 	break;
+	case 'mobilehq':
+          data = await getMobilehqData();
+        break;
 	case undefined:
 	  data = 'No sup prrovide';
 	break;

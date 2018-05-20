@@ -4,9 +4,11 @@ const fs = require('fs');
 var crypto = require('crypto');
 const pathToSourceJson = 'source.json';
 
+
+
 function getJstechData() {
     var alldata = {};
-    var lastResponse = {}; 
+    var lastResponse = {};
     return new Promise(async resolve => {
 
         const baseURL = 'https://jstech.com.au/';
@@ -45,10 +47,13 @@ function getJstechData() {
 
                             let productUrl = $(this).find('#desk-img-phone').find('a').attr('href');
                             let productUrlHash = crypto.createHash('md5').update(productUrl).digest("hex");
-                            var priceWithCurrncy = $(this).find('.price-new').text()
+                            var priceWithCurrncy = $(this).find('.price-new').text().replace(/(\r\n|\n|\r)/gm, '').trim();
+                            let public_price = $(this).find('.price-old').text().replace(/(\r\n|\n|\r)/gm, '').trim();
+                            if (priceWithCurrncy == ""){
+                                public_price = $(this).find('.desk-img-desc').children().last().text().replace(/(\r\n|\n|\r)/gm, '').trim();
+                                priceWithCurrncy = $(this).find('.desk-img-desc').children().last().text().replace(/(\r\n|\n|\r)/gm, '').trim();
+                            }
                             let priceValue = priceWithCurrncy.split("$")[1];
-
-
                             var oldPrice = priceWithCurrncy;
                             var oldPriceValue = priceValue;
                             var diff = '0.00';
@@ -80,6 +85,7 @@ function getJstechData() {
                                 'product_name': $(this).find('.desk-img-desc').find('a').text().replace(/(\r\n|\n|\r)/gm, '').trim(),
                                 'price': priceWithCurrncy,
                                 'price_value': priceValue,
+                                'public_price': public_price,
                                 "product_url" : productUrl,
                                 'old_price': oldPrice,
                                 'old_price_value': oldPriceValue,
@@ -140,24 +146,23 @@ function getJstechData() {
                     let resData = JSON.parse(responce.body);
                     const allitems = resData.products;
 
-                    console.log(allitems);
-
                     if (allitems.length>0) {
 
                         for(let item of allitems){
 
-
+                          
                             let productUrl = item.href.split("?")[0];
                             let productUrlHash = crypto.createHash('md5').update(productUrl).digest("hex");
 
                             var priceWithCurrncy = item.price;
-                            if(item.special!=undefined ||item.special!=''){
-                                priceWithCurrncy = item.special
+                            if(item.special!=undefined){
+                                priceWithCurrncy = item.special;
                             }
-
-                            let priceValue = priceWithCurrncy.split("$")[1];
-
-
+			    else{
+				priceWithCurrncy = item.price;
+			    }
+                            let priceValue = priceWithCurrncy+''.split("$")[1];
+                            let public_price = item.price;
                             var oldPrice = priceWithCurrncy;
                             var oldPriceValue = priceValue;
                             var diff = '0.00';
@@ -189,6 +194,7 @@ function getJstechData() {
                                 'product_name': item.name,
                                 'price': priceWithCurrncy,
                                 'price_value': priceValue,
+                                'public_price' : public_price,
                                 "product_url" : productUrl,
                                 'old_price': oldPrice,
                                 'old_price_value': oldPriceValue,
@@ -483,10 +489,9 @@ function getValuePartsData() {
 
 			    let productUrl = $(this).find('.name').find('a').attr('href');
 			    let productUrlHash = crypto.createHash('md5').update(productUrl).digest("hex");
-                var priceWithCurrncy = $(this).find('.price').find('.price-new').text();
-                // children().remove().end().text().replace(/(\r\n|\n|\r)/gm, '').trim();
-                            let priceValue = priceWithCurrncy.split("$")[1];
-			    var publicPrice = $(this).find('.price').find('.price-old').text();
+			    var priceWithCurrncy = $(this).find('.price').find('.price-new').text();
+                let priceValue = priceWithCurrncy.split("$")[1];
+                var publicPrice = $(this).find('.price').find('.price-old').text();
 			    var oldPrice = priceWithCurrncy;
 			    var oldPriceValue = priceValue;
 			    var diff = '0.00';
@@ -517,7 +522,7 @@ function getValuePartsData() {
                                 'product_name': $(this).find('.name').find('a').text(),
                                 'price': priceWithCurrncy,
                 'price_value': priceValue,
-                'public_price' : publicPrice,
+                "public_price" : publicPrice,
                                 "product_url" : productUrl,
 				'old_price': oldPrice,
 				'old_price_value': oldPriceValue,
@@ -543,7 +548,7 @@ function getValuePartsData() {
         //reading Last Json file
 
         try{
-            let rawdata = fs.readFileSync('last_valueparts.json');
+            let rawdata = fs.readFileSync('last.json');
             lastResponse = JSON.parse(rawdata);
         }
         catch(err){
@@ -571,7 +576,7 @@ function getValuePartsData() {
         fs.writeFile('ValueParts.json', JSON.stringify(alldata, null, 2), 'utf8', () => {
             console.log('Data Saved');
 	    
-	    fs.writeFile('last_valueparts.json', JSON.stringify(alldata, null, 2), 'utf8', () => {
+	    fs.writeFile('last.json', JSON.stringify(alldata, null, 2), 'utf8', () => {
             console.log('Old Data Saved');
 
             // Pass data to the parameter as bellow
@@ -580,34 +585,6 @@ function getValuePartsData() {
 
         });
 
-    });
-}
-
-function LoginToJs(){
-
-    return new Promise(resolve =>{
-    
-    const EMAIL = 'info@itshopcaloundra.com.au';
-    const PASSWORD = 'GorgeousBrows01';
-    const loginURL = 'https://jstech.com.au/?route=account/login&ajax=1'
-    
-    var options = {
-    url: loginURL,
-    headers: {'User-agent':'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:49.0) Gecko/20100101 Firefox/49.0'},
-    jar: true,
-    followAllRedirects: true,
-    form: {
-    email:EMAIL,
-    password:PASSWORD
-    }
-    };
-    
-    request.post(options,function(error, response, body) {
-    
-    return resolve(getJstechData());
-    
-    });
-    
     });
 }
 
@@ -625,8 +602,8 @@ function LoginAndProceed(){
 			jar: true,
 			followAllRedirects: true,
 			form: {
-			email:"info@itshopcaloundra.com.au",
-			password:"H1tach!@#"
+			email:"",
+			password:""
 			}
 	};
 
@@ -667,7 +644,33 @@ function getTargetsForSupplier(){
 	return formattedRawdata;
 }
 
+function LoginToJs(){
 
+    return new Promise(resolve =>{
+    
+    const EMAIL = '';
+    const PASSWORD = '';
+    const loginURL = 'https://jstech.com.au/?route=account/login&ajax=1'
+    
+    var options = {
+    url: loginURL,
+    headers: {'User-agent':'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:49.0) Gecko/20100101 Firefox/49.0'},
+    jar: true,
+    followAllRedirects: true,
+    form: {
+    email:EMAIL,
+    password:PASSWORD
+    }
+    };
+    
+    request.post(options,function(error, response, body) {
+    
+    return resolve(getJstechData());
+    
+    });
+    
+    });
+}
 
 exports.update = async (req, res) => {
 

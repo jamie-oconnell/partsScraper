@@ -8,8 +8,8 @@ const app = express();
 
 var alldata = {};
 var sourcesData = {};
-var supplierArray = ['valueparts','hitechparts','jstech'];
-var fileArray = {'valueparts':'ValueParts.json','hitechparts':'HitechParts.json','jstech':'JstechParts.json'};
+var supplierArray = ['valueparts','hitechparts','jstech','mobilehq'];
+var fileArray = {'valueparts':'ValueParts.json','hitechparts':'HitechParts.json','jstech':'JstechParts.json','mobilehq':'Mobilehq.json'};
 
 app.use('/', index);
 
@@ -40,12 +40,18 @@ function readSupplireDataFile(supplier){
 
 	let fileName = fileArray[supplier];
         console.log('filename '+fileName);
-	fs.readFile(fileName, (err, data) => {
-           if (err) {
-               throw err;
-            }
-        alldata[supplier] = JSON.parse(data);
-        });
+
+	try{
+		let rawData = fs.readFileSync(fileName);
+		alldata[supplier] = JSON.parse(rawData);
+		
+	}catch(e){
+
+	  console.log("Can not read "+fileName+" file");
+	}
+	
+
+	
 
 
 }
@@ -54,8 +60,8 @@ function supplier (req, res){
   
   readSupplireDataFile(req.params.supplier);
   try {
-      console.log(alldata[req.params.supplier]);
-      res.send({data:alldata[req.params.supplier]});
+      
+      res.send({data:alldata[req.params.supplier]['data'],meta_data:alldata[req.params.supplier]['meta_data']});
   }
   catch (e) {
       res.send({data:e.toString()});
@@ -70,7 +76,8 @@ function supplierfilter (req, res){
     if(req.params.supplier!=undefined &&  supplierArray.indexOf(req.params.supplier)>-1){
 
       try {
-          res.send({data:alldata[req.params.supplier][categoryid]});
+	   
+          res.send({data:alldata[req.params.supplier]['data'][categoryid],meta_data:alldata[req.params.supplier]['meta_data']});
       }catch (e) {
           res.send({data:e.toString()});
       }
@@ -92,7 +99,7 @@ function supplierfilterspecific(req, res){
     if(req.params.supplier!=undefined && supplierArray.indexOf(req.params.supplier)>-1){
 
       try {
-          res.send({data:alldata[req.params.supplier][categoryid][id]});
+          res.send({data:alldata[req.params.supplier]['data'][categoryid][id],meta_data:alldata[req.params.supplier]['meta_data']});
 
       }catch (e) {
           res.send({data:e.toString()});
