@@ -49,7 +49,7 @@ function getMobilehqData() {
                             let productUrl = $(this).find('.product-name').find('a').attr('href');
                             let productUrlHash = crypto.createHash('md5').update(productUrl).digest("hex");
                             //var priceWithCurrncy = $(this).find('.price-box').text().replace(/(\r\n|\n|\r)/gm, '').trim();
-                            var priceWithCurrncy = "$0.00";
+                            var priceWithCurrncy = $(this).find('.price-box').find('.price').text().replace(/(\r\n|\n|\r)/gm, '').trim();
                             let priceValue = priceWithCurrncy.split("$")[1];
 
                             var oldPrice = priceWithCurrncy;
@@ -861,8 +861,8 @@ function LoginToMobilehq(){
 
     return new Promise(resolve =>{
     
-    const EMAIL = '';
-    const PASSWORD = '';
+    const EMAIL = 'info@itshopcaloundra.com.au';
+    const PASSWORD = 'AORT9paqEag0';
     const loginPageURL = 'https://www.mobilehq.com.au/customer/account/login';
     const loginURL = 'https://www.mobilehq.com.au/customer/account/loginPost/'
     
@@ -914,7 +914,7 @@ exports.update = async (req, res) => {
 	  data =  await LoginToJs();
 	break;
 	case 'mobilehq':
-          data = await getMobilehqData();
+          data = await LoginToMobilehq();
         break;
 	case undefined:
 	  data = 'No sup prrovide';
