@@ -43,7 +43,7 @@ app.get('/api/:supplier/:category/:id', supplierfilterspecific);
 // });
 
 function sources (req, res){
-    new AWS.S3().getObject({ Bucket: "supplier-json-files", Key: "source.json" }, function(err, data)
+    new AWS.S3().getObject({ Bucket: "supplier-json-files2", Key: "source.json" }, function(err, data)
     {
         if (!err)
             var sourcesData = JSON.parse(data.Body);
@@ -65,7 +65,7 @@ function readSupplireDataFile(supplier){
     return new Promise(async resolve => {
 
 	try{
-		new AWS.S3().getObject({ Bucket: "supplier-json-files", Key: fileName }, function(err, data)
+		new AWS.S3().getObject({ Bucket: "supplier-json-files2", Key: fileName }, function(err, data)
         {
             if (!err)
                 alldata[supplier] = JSON.parse(data.Body);

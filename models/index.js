@@ -17,7 +17,7 @@ function uploadtoS3(filename){
     
     //configuring parameters
     var params = {
-      Bucket: 'supplier-json-files',
+      Bucket: 'supplier-json-files2',
       Body : fs.createReadStream("./" + filename),
       Key : filename
     };
@@ -41,7 +41,7 @@ function readFileFromS3(filename){
     return new Promise(async resolve => {
 
     try{
-        new AWS.S3().getObject({ Bucket: "supplier-json-files", Key: filename }, function(err, data)
+        new AWS.S3().getObject({ Bucket: "supplier-json-files2", Key: filename }, function(err, data)
         {
             if (!err){
                 var responce = JSON.parse(data.Body);
