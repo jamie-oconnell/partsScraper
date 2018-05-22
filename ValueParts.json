@@ -11,7 +11,7 @@
           "old_price": "AU$5.23",
           "old_price_value": "5.23",
           "is_changed": false,
-          "diff": 0
+          "diff": "0.00"
         },
         "b5dfa5e5b977fd75d8edae1039497e7b": {
           "product_name": "Iphone 30-pin to USB Cable",
@@ -22,7 +22,7 @@
           "old_price": "AU$5.72",
           "old_price_value": "5.72",
           "is_changed": false,
-          "diff": 0
+          "diff": "0.00"
         },
         "0dc07fb62551bcd4f00dd7836306e2a3": {
           "product_name": "iPhone 4 Back Cover [Baby Blue]",
@@ -33,7 +33,7 @@
           "old_price": "AU$4.14",
           "old_price_value": "4.14",
           "is_changed": false,
-          "diff": 0
+          "diff": "0.00"
         },
         "9f425ec47e0821cefa70c2ae61a223f0": {
           "product_name": "iPhone 4 back cover [Black]",
@@ -44,7 +44,7 @@
           "old_price": "AU$4.14",
           "old_price_value": "4.14",
           "is_changed": false,
-          "diff": 0
+          "diff": "0.00"
         },
         "253df50f0082a988b2ad902cd3cca562": {
           "product_name": "iPhone 4 back cover [White] ",
@@ -55,7 +55,7 @@
           "old_price": "AU$4.14",
           "old_price_value": "4.14",
           "is_changed": false,
-          "diff": 0
+          "diff": "0.00"
         },
         "e5d17275be79c2901a237382bedb3fad": {
           "product_name": "iPhone 4 battery",
@@ -66,7 +66,7 @@
           "old_price": "AU$14.11",
           "old_price_value": "14.11",
           "is_changed": false,
-          "diff": 0
+          "diff": "0.00"
         },
         "958f12645c473a14725a8c8bbddee69f": {
           "product_name": "iPhone 4 battery connector",
@@ -77,7 +77,7 @@
           "old_price": "AU$1.03",
           "old_price_value": "1.03",
           "is_changed": false,
-          "diff": 0
+          "diff": "0.00"
         },
         "83fa02e2a08b10638663fc51881513eb": {
           "product_name": "iPhone 4 bottom antenna cable",
@@ -88,7 +88,7 @@
           "old_price": "AU$8.27",
           "old_price_value": "8.27",
           "is_changed": false,
-          "diff": 0
+          "diff": "0.00"
         },
         "772692698686dab8fd8223340a1c20c8": {
           "product_name": "iPhone 4 charging port flex cable with mic [Black]",
@@ -99,7 +99,7 @@
           "old_price": "AU$4.87",
           "old_price_value": "4.87",
           "is_changed": false,
-          "diff": 0
+          "diff": "0.00"
         },
         "7782170f9a9435951c079202b4eac07e": {
           "product_name": "iPhone 4 charging port flex cable with mic [White]",
@@ -110,7 +110,7 @@
           "old_price": "AU$7.52",
           "old_price_value": "7.52",
           "is_changed": false,
-          "diff": 0
+          "diff": "0.00"
         },
         "765bca2d8fce4d5b1f7c7eeb45582b36": {
           "product_name": "iPhone 4 earpiece speaker",
@@ -121,7 +121,7 @@
           "old_price": "AU$1.03",
           "old_price_value": "1.03",
           "is_changed": false,
-          "diff": 0
+          "diff": "0.00"
         },
         "eac7151dc4d93911c39bf9b362046922": {
           "product_name": "iPhone 4 front small camera with flex cable",
@@ -132,7 +132,7 @@
           "old_price": "AU$4.14",
           "old_price_value": "4.14",
           "is_changed": false,
-          "diff": 0
+          "diff": "0.00"
         },
         "9014bc45861ab22486fcd201e0d4a37e": {
           "product_name": "iPhone 4 home button [Black]",
@@ -143,7 +143,7 @@
           "old_price": "AU$1.03",
           "old_price_value": "1.03",
           "is_changed": false,
-          "diff": 0
+          "diff": "0.00"
         },
         "d737a0c631d5aef90110d86d5bb8880a": {
           "product_name": "iPhone 4 home button [White]",
@@ -154,7 +154,7 @@
           "old_price": "AU$1.03",
           "old_price_value": "1.03",
           "is_changed": false,
-          "diff": 0
+          "diff": "0.00"
         },
         "376cc217a7341a993ee232bb66349f9c": {
           "product_name": "iPhone 4 home button cable",
@@ -165,7 +165,7 @@
           "old_price": "AU$1.03",
           "old_price_value": "1.03",
           "is_changed": false,
-          "diff": 0
+          "diff": "0.00"
         },
         "a23949e521407bd3df53d7dbdeedb247": {
           "product_name": "iPhone 4 LCD and touch screen assembly [Black] [Aftermarket Display LCD]",
@@ -176,7 +176,7 @@
           "old_price": "AU$18.72",
           "old_price_value": "18.72",
           "is_changed": false,
-          "diff": 0
+          "diff": "0.00"
         },
         "e114b7a671f98f2b6bcc647743d4bb3a": {
           "product_name": "iPhone 4 LCD and touch screen assembly [Black] [Normal Quality]",
@@ -187,7 +187,7 @@
           "old_price": "AU$20.79",
           "old_price_value": "20.79",
           "is_changed": false,
-          "diff": 0
+          "diff": "0.00"
         },
         "31b56b7509b1d741f5fab83adce615aa": {
           "product_name": "iPhone 4 LCD and Touch Screen Assembly [Orange] [Aftermarket]",
@@ -198,7 +198,7 @@
           "old_price": "AU$22.40",
           "old_price_value": "22.40",
           "is_changed": false,
-          "diff": 0
+          "diff": "0.00"
         },
         "736cd689f166bf56d269068cc45035b3": {
           "product_name": "iPhone 4 LCD and Touch Screen Assembly [Silver] [Aftermarket]",
@@ -209,7 +209,7 @@
           "old_price": "AU$22.40",
           "old_price_value": "22.40",
           "is_changed": false,
-          "diff": 0
+          "diff": "0.00"
         },
         "f23f5dc36822bbdcd4421dc67a6eca4b": {
           "product_name": "iPhone 4 LCD and Touch Screen Assembly [White Panther Skin] [Aftermarket]",
@@ -220,7 +220,7 @@
           "old_price": "AU$22.40",
           "old_price_value": "22.40",
           "is_changed": false,
-          "diff": 0
+          "diff": "0.00"
         },
         "4f935b89de07faaecceb55a46d7e513c": {
           "product_name": "iPhone 4 LCD and touch screen assembly [White] [Aftermarket Display LCD]",
@@ -231,7 +231,7 @@
           "old_price": "AU$18.72",
           "old_price_value": "18.72",
           "is_changed": false,
-          "diff": 0
+          "diff": "0.00"
         },
         "bf9f0758f095a2cf687c5c0368c1ecab": {
           "product_name": "iPhone 4 LCD and touch screen assembly [White] [Normal Quality]",
@@ -242,7 +242,7 @@
           "old_price": "AU$20.79",
           "old_price_value": "20.79",
           "is_changed": false,
-          "diff": 0
+          "diff": "0.00"
         },
         "32e3549a41c4da85976090547c7def59": {
           "product_name": "iPhone 4 metal plates for holding the cables 3 pieces",
@@ -253,7 +253,7 @@
           "old_price": "AU$3.10",
           "old_price_value": "3.10",
           "is_changed": false,
-          "diff": 0
+          "diff": "0.00"
         },
         "cfeddc96e3102edc29ba6a8bb02beb18": {
           "product_name": "iPhone 4 middle frame with buttons and flex cables",
@@ -264,7 +264,7 @@
           "old_price": "AU$31.02",
           "old_price_value": "31.02",
           "is_changed": false,
-          "diff": 0
+          "diff": "0.00"
         },
         "46f62196ac0b37f42674a5a4dfdca080": {
           "product_name": "iPhone 4 power button flex cable with proximity sensor",
@@ -275,7 +275,7 @@
           "old_price": "AU$4.65",
           "old_price_value": "4.65",
           "is_changed": false,
-          "diff": 0
+          "diff": "0.00"
         },
         "373b23ec6cfceb59841de96d2571d27f": {
           "product_name": "iPhone 4 proximity sticker x5",
@@ -286,7 +286,7 @@
           "old_price": "AU$2.59",
           "old_price_value": "2.59",
           "is_changed": false,
-          "diff": 0
+          "diff": "0.00"
         },
         "db65dfe82b7dbf3980d77a6e4361f0f0": {
           "product_name": "iPhone 4 rear big camera with flex cable",
@@ -297,7 +297,7 @@
           "old_price": "AU$4.46",
           "old_price_value": "4.46",
           "is_changed": false,
-          "diff": 0
+          "diff": "0.00"
         },
         "baa5abd1f6983981cbb6ad07d17ee5f9": {
           "product_name": "iPhone 4 ringer block with antena cable",
@@ -308,7 +308,7 @@
           "old_price": "AU$4.14",
           "old_price_value": "4.14",
           "is_changed": false,
-          "diff": 0
+          "diff": "0.00"
         },
         "b97494f356ee421388b71494cdbdc89a": {
           "product_name": "iPhone 4 Screen Cable Metal Holder",
@@ -319,7 +319,7 @@
           "old_price": "AU$1.10",
           "old_price_value": "1.10",
           "is_changed": false,
-          "diff": 0
+          "diff": "0.00"
         },
         "9932c5c468826bcfed33bb078f94f233": {
           "product_name": "iPhone 4 screw set",
@@ -330,7 +330,7 @@
           "old_price": "AU$1.88",
           "old_price_value": "1.88",
           "is_changed": false,
-          "diff": 0
+          "diff": "0.00"
         },
         "99d81d5d50730d0e291e97501057e88c": {
           "product_name": "iPhone 4 Side Buttons Volume Mute Power Button",
@@ -341,7 +341,7 @@
           "old_price": "AU$1.88",
           "old_price_value": "1.88",
           "is_changed": false,
-          "diff": 0
+          "diff": "0.00"
         },
         "d057d268cf02a1e1f4dc6563ac83764d": {
           "product_name": "iPhone 4 vibrator",
@@ -352,7 +352,7 @@
           "old_price": "AU$3.10",
           "old_price_value": "3.10",
           "is_changed": false,
-          "diff": 0
+          "diff": "0.00"
         },
         "21519d0f30f7e605aea2dc1d1bb2a5fd": {
           "product_name": "iPhone 4 volume button flex cable with handsfree port [Black]",
@@ -363,7 +363,7 @@
           "old_price": "AU$4.14",
           "old_price_value": "4.14",
           "is_changed": false,
-          "diff": 0
+          "diff": "0.00"
         },
         "7e0ba9a2e2d0721c560bd5e1ab3642ce": {
           "product_name": "iPhone 4 volume button flex cable with handsfree port [White]",
@@ -374,7 +374,7 @@
           "old_price": "AU$3.08",
           "old_price_value": "3.08",
           "is_changed": false,
-          "diff": 0
+          "diff": "0.00"
         },
         "290aa56a3e64e52d0e7f029f10620db6": {
           "product_name": "iPhone 4/4S battery sticker",
@@ -385,7 +385,7 @@
           "old_price": "AU$1.55",
           "old_price_value": "1.55",
           "is_changed": false,
-          "diff": 0
+          "diff": "0.00"
         },
         "8cbb3a40dd369a98cc85c7f5d6e5fff9": {
           "product_name": "iPhone 4/4S Bottom 2 Screws",
@@ -396,7 +396,7 @@
           "old_price": "AU$1.03",
           "old_price_value": "1.03",
           "is_changed": false,
-          "diff": 0
+          "diff": "0.00"
         },
         "5337fd3c89de07c2e228a399f65cff75": {
           "product_name": "iPhone 4/4S earpiece mesh 3 in 1 [Original] x5",
@@ -407,7 +407,7 @@
           "old_price": "AU$2.33",
           "old_price_value": "2.33",
           "is_changed": false,
-          "diff": 0
+          "diff": "0.00"
         },
         "47295ddf6c77e44ffffa9d4376fdc262": {
           "product_name": "iPhone 4/4S SIM card tray",
@@ -418,7 +418,7 @@
           "old_price": "AU$1.03",
           "old_price_value": "1.03",
           "is_changed": false,
-          "diff": 0
+          "diff": "0.00"
         },
         "659a5258e6eda6f086f777fbcb15cd85": {
           "product_name": "Micro Spring Terminal for Power Volume Button Flex Cables on iPhone 4 4S x5pcs",
@@ -429,7 +429,7 @@
           "old_price": "AU$2.20",
           "old_price_value": "2.20",
           "is_changed": false,
-          "diff": 0
+          "diff": "0.00"
         },
         "c2fa1d511c73ce9ad54eb6ab0c0bb1e7": {
           "product_name": "Opening tool GB-5A Stainless disassemble stick ultrathin for iPhone and iPad",
@@ -440,7 +440,7 @@
           "old_price": "AU$2.23",
           "old_price_value": "2.23",
           "is_changed": false,
-          "diff": 0
+          "diff": "0.00"
         },
         "9ad1ee2e6d75265e3d278efc13bc7181": {
           "product_name": "Screen Testing Cable for iPhone 4/4S",
@@ -451,7 +451,7 @@
           "old_price": "AU$6.27",
           "old_price_value": "6.27",
           "is_changed": false,
-          "diff": 0
+          "diff": "0.00"
         },
         "d8ef66de8d94682057198a54be6b9154": {
           "product_name": "Tempered Glass Screen Protector for iPhone 4 / iPhone 4S",
@@ -462,7 +462,7 @@
           "old_price": "AU$2.75",
           "old_price_value": "2.75",
           "is_changed": false,
-          "diff": 0
+          "diff": "0.00"
         }
       },
       "Iphone 4s": {
@@ -7475,6 +7475,33 @@
           "is_changed": false,
           "diff": "0.00"
         },
+        "406cd825eadc53758f85a802606f9330": {
+          "product_name": "iPhone 8 Plus Housing with Back Cover, Charging Port and Power Volume Flex Cable [Black]",
+          "price": "",
+          "public_price": "",
+          "product_url": "http://www.valueparts.com.au/parts-by-model/apple-iphone-parts/iphone-8-plus-parts/iphone-8-plus-housing-with-back-cover-charging-port-and-power-volume-flex-cable-black.html",
+          "old_price": "",
+          "is_changed": false,
+          "diff": "0.00"
+        },
+        "bbc3c4b2ffa97a383e32b698d6af6e00": {
+          "product_name": "iPhone 8 Plus Housing with Back Cover, Charging Port and Power Volume Flex Cable [Gold]",
+          "price": "",
+          "public_price": "",
+          "product_url": "http://www.valueparts.com.au/parts-by-model/apple-iphone-parts/iphone-8-plus-parts/iphone-8-plus-housing-with-back-cover-charging-port-and-power-volume-flex-cable-gold.html",
+          "old_price": "",
+          "is_changed": false,
+          "diff": "0.00"
+        },
+        "e586fad48bb1dcff890a83d63c7b6a33": {
+          "product_name": "iPhone 8 Plus Housing with Back Cover, Charging Port and Power Volume Flex Cable [White]",
+          "price": "",
+          "public_price": "",
+          "product_url": "http://www.valueparts.com.au/parts-by-model/apple-iphone-parts/iphone-8-plus-parts/iphone-8-plus-housing-with-back-cover-charging-port-and-power-volume-flex-cable-white.html",
+          "old_price": "",
+          "is_changed": false,
+          "diff": "0.00"
+        },
         "c649a56516f8c84e57ac9d896d4d1408": {
           "product_name": "iPhone 8 Plus LCD and Touch Screen Assembly [Aftermarket] [Black]",
           "price": "AU$45.25",
@@ -8561,17 +8588,6 @@
           "is_changed": false,
           "diff": "0.00"
         },
-        "63b26ff349b039a35f956bf0d06ad0fe": {
-          "product_name": "iPad 3 Home Button Holder",
-          "price": "AU$1.32",
-          "price_value": "1.32",
-          "public_price": "AU$1.52",
-          "product_url": "http://www.valueparts.com.au/parts-by-model/apple-ipad-parts/the-new-ipad-ipad-3-parts/ipad-3-home-button-holder-1705282217.html",
-          "old_price": "AU$1.32",
-          "old_price_value": "1.32",
-          "is_changed": false,
-          "diff": "0.00"
-        },
         "ce6c07ab76199276d4e6489587ec7c7b": {
           "product_name": "iPad 3 Home Button Holder",
           "price": "AU$1.41",
@@ -8580,6 +8596,17 @@
           "product_url": "http://www.valueparts.com.au/parts-by-model/apple-ipad-parts/the-new-ipad-ipad-3-parts/ipad-3-home-button-holder.html",
           "old_price": "AU$1.41",
           "old_price_value": "1.41",
+          "is_changed": false,
+          "diff": "0.00"
+        },
+        "63b26ff349b039a35f956bf0d06ad0fe": {
+          "product_name": "iPad 3 Home Button Holder",
+          "price": "AU$1.32",
+          "price_value": "1.32",
+          "public_price": "AU$1.52",
+          "product_url": "http://www.valueparts.com.au/parts-by-model/apple-ipad-parts/the-new-ipad-ipad-3-parts/ipad-3-home-button-holder-1705282217.html",
+          "old_price": "AU$1.32",
+          "old_price_value": "1.32",
           "is_changed": false,
           "diff": "0.00"
         },
@@ -16098,6 +16125,6 @@
     }
   },
   "meta_data": {
-    "last_update": "2018-5-21:07:38:03"
+    "last_update": "2018-5-22:05:44:08"
   }
 }

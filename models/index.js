@@ -4,8 +4,60 @@ const fs = require('fs');
 var crypto = require('crypto');
 var moment = require('moment');
 const pathToSourceJson = 'source.json';
+const AWS = require('aws-sdk');
 
+//configuring the AWS environment
+AWS.config.update({
+    accessKeyId: "AKIAI7OYWRPA6RFQNRWQ",
+    secretAccessKey: "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"
+  });
 
+function uploadtoS3(filename){
+    var s3 = new AWS.S3();
+    
+    //configuring parameters
+    var params = {
+      Bucket: 'supplier-json-files',
+      Body : fs.createReadStream("./" + filename),
+      Key : filename
+    };
+    
+    s3.upload(params, function (err, data) {
+      //handle error
+      if (err) {
+        console.log("Error", err);
+      }
+    
+      //success
+      if (data) {
+        console.log("Uploaded in:", data.Location);
+      }
+    });
+};
+
+function readFileFromS3(filename){
+
+    console.log(filename)
+    return new Promise(async resolve => {
+
+    try{
+        new AWS.S3().getObject({ Bucket: "supplier-json-files", Key: filename }, function(err, data)
+        {
+            if (!err){
+                var responce = JSON.parse(data.Body);
+                return resolve (responce);
+            }
+            if (err){
+                console.log(err)
+            }
+        });;
+        
+    }catch(e){
+
+    console.log("Can not read "+filename+" file");
+    }
+    });
+}
 
 function getMobilehqData() {
     var alldata = {};
@@ -119,13 +171,13 @@ function getMobilehqData() {
             });
         };
 
-        var supplierTargets = getTargetsForSupplier();
+        var supplierTargets = await getTargetsForSupplier();
 
         //reading Last Json file,
 		// TODO do we need to keep a separate last,json file for each supplier, may be it's a better solution #HANSITHA
 
         try{
-            let rawdata = fs.readFileSync('last_mobilehq.json');
+            let rawdata =  await readFileFromS3('last_mobilehq.json');
             lastResponse = JSON.parse(rawdata).data;
         }
         catch(err){
@@ -162,9 +214,11 @@ function getMobilehqData() {
 	
         fs.writeFile('Mobilehq.json', JSON.stringify(dataToWirte, null, 2), 'utf8', () => {
             console.log('Data Saved');
+            uploadtoS3('Mobilehq.json')
 
             fs.writeFile('last_mobilehq.json', JSON.stringify(dataToWirte, null, 2), 'utf8', () => {
                 console.log('Old Data Saved');
+                uploadtoS3('last_mobilehq.json')
 
                 // Pass data to the parameter as bellow
                 return resolve(dataToWirte);
@@ -404,13 +458,13 @@ function getJstechData() {
             });
         };
 
-        var supplierTargets = getTargetsForSupplier();
+        var supplierTargets = await getTargetsForSupplier();
 
         //reading Last Json file,
         //json file for each supplier, may be it's a better solution #HANSITHA
 
         try{
-            let rawdata = fs.readFileSync('last_jstech.json');
+            let rawdata = await readFileFromS3('last_jstech.json');
             lastResponse = JSON.parse(rawdata).data;
         }
         catch(err){
@@ -457,9 +511,11 @@ function getJstechData() {
 	let dataToWirte = {data:alldata,meta_data:{last_update:moment().format('Y-M-D:hh:mm:ss')}};
         fs.writeFile('JstechParts.json', JSON.stringify(dataToWirte, null, 2), 'utf8', () => {
             console.log('Data Saved');
+            uploadtoS3('JstechParts.json')
 
             fs.writeFile('last_jstech.json', JSON.stringify(dataToWirte, null, 2), 'utf8', () => {
                 console.log('Old Data Saved');
+                uploadtoS3('last_jstech.json')
 
                 console.log(alldata);
                 // Pass data to the parameter as bellow
@@ -582,13 +638,13 @@ function getHitechPartsData() {
             });
         };
 
-        var supplierTargets = getTargetsForSupplier();
+        var supplierTargets = await getTargetsForSupplier();
 
         //reading Last Json file,
 		// TODO do we need to keep a separate last,json file for each supplier, may be it's a better solution #HANSITHA
 
         try{
-            let rawdata = fs.readFileSync('last_hitech.json');
+            let rawdata = await readFileFromS3('last_hitech.json');
             lastResponse = JSON.parse(rawdata).data;
         }
         catch(err){
@@ -624,9 +680,11 @@ function getHitechPartsData() {
 	let dataToWirte = {data:alldata,meta_data:{last_update:moment().format('Y-M-D:hh:mm:ss')}};
         fs.writeFile('HitechParts.json', JSON.stringify(dataToWirte, null, 2), 'utf8', () => {
             console.log('Data Saved');
+            uploadtoS3('HitechParts.json')
 
             fs.writeFile('last_hitech.json', JSON.stringify(dataToWirte, null, 2), 'utf8', () => {
                 console.log('Old Data Saved');
+                uploadtoS3('last_hitech.json')
 
                 // Pass data to the parameter as bellow
                 return resolve(dataToWirte);
@@ -728,14 +786,14 @@ function getValuePartsData() {
         //reading Last Json file
 
         try{
-            let rawdata = fs.readFileSync('last.json');
-            lastResponse = JSON.parse(rawdata).data;
+            let rawdata = readFileFromS3('last.json').then(
+            lastResponse = JSON.parse(rawdata).data);
         }
         catch(err){
 
         }
 
-        var supplierTargets = getTargetsForSupplier();
+        var supplierTargets = await getTargetsForSupplier();
 
         console.log(supplierTargets);
 
@@ -756,9 +814,11 @@ function getValuePartsData() {
 	let dataToWirte = {data:alldata,meta_data:{last_update:moment().format('Y-M-D:hh:mm:ss')}};
         fs.writeFile('ValueParts.json', JSON.stringify(dataToWirte, null, 2), 'utf8', () => {
             console.log('Data Saved');
+            uploadtoS3('ValueParts.json')
 	    
 	    fs.writeFile('last.json', JSON.stringify(dataToWirte, null, 2), 'utf8', () => {
             console.log('Old Data Saved');
+            uploadtoS3('last.json')
 
             // Pass data to the parameter as bellow
             return resolve(dataToWirte);
@@ -810,22 +870,18 @@ function printLoggedInUserName(body,customMessge){
 	console.log(customMessge+$(loginDiv).text()+'\n');
 }
 
-function getTargetsForSupplier(){
-	var formattedRawdata= {};
+async function getTargetsForSupplier(){
 	
 	try{
-		let rawData = fs.readFileSync(pathToSourceJson);
-	        formattedRawdata = JSON.parse(rawData);
+        let rawData = await readFileFromS3(pathToSourceJson);
+        return (rawData);
 	}
 	catch(err){
 	    console.log(err);
 	    console.log('cant read source json file');
 	}
 
-	return formattedRawdata;
 }
-
-
 
 
 function LoginToJs(){
@@ -895,7 +951,6 @@ function LoginToMobilehq(){
 });
 }
 
-
 exports.update = async (req, res) => {
 
 
@@ -925,3 +980,4 @@ exports.update = async (req, res) => {
     
     res.send({ data });
 };
+

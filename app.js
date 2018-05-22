@@ -1,8 +1,13 @@
 const express = require('express');
 const path = require('path');
 const fs = require('fs');
-
+const AWS = require('aws-sdk');
 const index = require('./routes/index');
+
+AWS.config.update({
+    accessKeyId: "AKIAI7OYWRPA6RFQNRWQ",
+    secretAccessKey: "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"
+  });
 
 const app = express();
 
@@ -21,16 +26,32 @@ app.get('/api/:supplier', supplier);
 app.get('/api/:supplier/:category', supplierfilter);
 app.get('/api/:supplier/:category/:id', supplierfilterspecific);
 
-fs.readFile('source.json', (err, data) => {
-    if (err) {
-        throw err;
-    }
-    sourcesData = JSON.parse(data);
-});
+// new AWS.S3().getObject({ Bucket: "supplier-json-files", Key: "source.json" }, function(err, data)
+// {
+//     if (!err)
+//          sourcesData = JSON.parse(data);
+//     if (err){
+//         console.log(err)
+//     }
+// });
+
+// fs.readFile('source.json', (err, data) => {
+//     if (err) {
+//         throw err;
+//     }
+//     sourcesData = JSON.parse(data);
+// });
 
 function sources (req, res){
-    console.log("test");
-    res.send(sourcesData);
+    new AWS.S3().getObject({ Bucket: "supplier-json-files", Key: "source.json" }, function(err, data)
+    {
+        if (!err)
+            var sourcesData = JSON.parse(data.Body);
+            res.send(sourcesData);
+        if (err){
+            console.log(err)
+        }
+    });
   };
 
 
@@ -41,26 +62,30 @@ function readSupplireDataFile(supplier){
 	let fileName = fileArray[supplier];
         console.log('filename '+fileName);
 
+    return new Promise(async resolve => {
+
 	try{
-		let rawData = fs.readFileSync(fileName);
-		alldata[supplier] = JSON.parse(rawData);
+		new AWS.S3().getObject({ Bucket: "supplier-json-files", Key: fileName }, function(err, data)
+        {
+            if (!err)
+                alldata[supplier] = JSON.parse(data.Body);
+                return resolve();
+            if (err){
+                console.log(err)
+            }
+        });;
 		
 	}catch(e){
 
 	  console.log("Can not read "+fileName+" file");
 	}
-	
-
-	
-
-
+});
 }
 
-function supplier (req, res){
+async function supplier (req, res){
   
-  readSupplireDataFile(req.params.supplier);
+  await readSupplireDataFile(req.params.supplier);
   try {
-      
       res.send({data:alldata[req.params.supplier]['data'],meta_data:alldata[req.params.supplier]['meta_data']});
   }
   catch (e) {
@@ -68,9 +93,9 @@ function supplier (req, res){
   }
 };
 
-function supplierfilter (req, res){
+async function supplierfilter (req, res){
 
-    readSupplireDataFile(req.params.supplier);
+    await readSupplireDataFile(req.params.supplier);
     var categoryid = decodeURI(req.params.category);
     
     if(req.params.supplier!=undefined &&  supplierArray.indexOf(req.params.supplier)>-1){
@@ -84,15 +109,13 @@ function supplierfilter (req, res){
 
     }
 
-
-
 };
 
 
 
-function supplierfilterspecific(req, res){
+async function supplierfilterspecific(req, res){
 
-  readSupplireDataFile(req.params.supplier);
+  await readSupplireDataFile(req.params.supplier);
   var categoryid = req.params.category;
   var id = decodeURI(req.params.id);
 
@@ -106,7 +129,6 @@ function supplierfilterspecific(req, res){
       }
 
     }
-
 
 }
 
