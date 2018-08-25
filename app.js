@@ -18,6 +18,12 @@ var fileArray = {'valueparts':'ValueParts.json','hitechparts':'HitechParts.json'
 
 app.use('/', index);
 
+app.use(function(req, res, next) {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+    next();
+  });
+
 const model = require('./models');
 app.get('/api/update', model.update);
 app.get('/api/update/:supplier', model.update);
