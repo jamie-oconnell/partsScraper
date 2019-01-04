@@ -1,18 +1,15 @@
 const express = require('express');
-const path = require('path');
-const fs = require('fs');
 const AWS = require('aws-sdk');
 const index = require('./routes/index');
 
 AWS.config.update({
-    accessKeyId: "AKIAI7OYWRPA6RFQNRWQ",
-    secretAccessKey: "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"
+    accessKeyId: "",
+    secretAccessKey: ""
   });
 
 const app = express();
 
 var alldata = {};
-var sourcesData = {};
 var supplierArray = ['valueparts','hitechparts','jstech','mobilehq'];
 var fileArray = {'valueparts':'ValueParts.json','hitechparts':'HitechParts.json','jstech':'JstechParts.json','mobilehq':'Mobilehq.json'};
 
@@ -32,22 +29,6 @@ app.get('/api/:supplier', supplier);
 app.get('/api/:supplier/:category', supplierfilter);
 app.get('/api/:supplier/:category/:id', supplierfilterspecific);
 
-// new AWS.S3().getObject({ Bucket: "supplier-json-files", Key: "source.json" }, function(err, data)
-// {
-//     if (!err)
-//          sourcesData = JSON.parse(data);
-//     if (err){
-//         console.log(err)
-//     }
-// });
-
-// fs.readFile('source.json', (err, data) => {
-//     if (err) {
-//         throw err;
-//     }
-//     sourcesData = JSON.parse(data);
-// });
-
 function sources (req, res){
     new AWS.S3().getObject({ Bucket: "supplier-json-files2", Key: "source.json" }, function(err, data)
     {
@@ -59,8 +40,6 @@ function sources (req, res){
         }
     });
   };
-
-
 
 function readSupplireDataFile(supplier){
         console.log('supplier name '+supplier);
@@ -118,7 +97,6 @@ async function supplierfilter (req, res){
 };
 
 
-
 async function supplierfilterspecific(req, res){
 
   await readSupplireDataFile(req.params.supplier);
@@ -139,12 +117,7 @@ async function supplierfilterspecific(req, res){
 }
 
 
-
 var port = process.env.PORT || 3344;
-// app.listen(port, function(){
-//     console.log('Server is running on port:', port);
-    
-// });
 
 // start the server
 const server = app.listen(port);

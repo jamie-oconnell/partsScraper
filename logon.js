@@ -4,42 +4,35 @@ const fs = require('fs');
 
 var alldata = {};
 
+function LoginAndProceed() {
+    const loginURL = 'http://www.valueparts.com.au/login'
 
+    var options = {
+        url: loginURL,
+        headers: { 'User-agent': 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:49.0) Gecko/20100101 Firefox/49.0' },
+        jar: true,
+        followAllRedirects: true,
+        form: {
+            email: "",
+            password: ""
+        }
+    };
 
+    request.post(options, function (error, response, body) {
 
-function LoginAndProceed(){
-	const loginURL = 'http://www.valueparts.com.au/login'
+        printLoggedInUserName(body, '1 ');
 
-	var options = {
-			url: loginURL,
-			headers: {'User-agent':'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:49.0) Gecko/20100101 Firefox/49.0'},
-			jar: true,
-			followAllRedirects: true,
-			form: {
-			email:"dayonezero@gmail.com",
-			password:"password"
-			}
-		};
+        getValuePartsData();
 
-	request.post(options,function(error, response, body) {
-
-		printLoggedInUserName(body,'1 ');
-
-		getValuePartsData();
-	
-
-		
-	});
+    });
 }
 
-function printLoggedInUserName(body,customMessge){
+function printLoggedInUserName(body, customMessge) {
 
-	let $ = cheerio.load(body);
-	let loginDiv = $('#welcome');
-	console.log(customMessge+$(loginDiv).text()+'\n');
+    let $ = cheerio.load(body);
+    let loginDiv = $('#welcome');
+    console.log(customMessge + $(loginDiv).text() + '\n');
 }
-
-
 
 function getValuePartsData() {
     return new Promise(async resolve => {
@@ -52,17 +45,16 @@ function getValuePartsData() {
             return baseURL + el;
         });
 
-
         const request_data = (url, categoryid, id) => {
             return new Promise(resolve => {
 
-		let getOptions = {
-		url: url,
-		headers: {'User-agent':'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:49.0) Gecko/20100101 Firefox/49.0'},
-		jar: true,
-		followAllRedirects: true,
-		
-		};
+                let getOptions = {
+                    url: url,
+                    headers: { 'User-agent': 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:49.0) Gecko/20100101 Firefox/49.0' },
+                    jar: true,
+                    followAllRedirects: true,
+
+                };
 
                 request.get(getOptions, (error, responce, html) => {
                     const productdata = [];
@@ -73,7 +65,7 @@ function getValuePartsData() {
                             productdata.push({
                                 'product_name': $(this).find('.name').find('a').text(),
                                 'price': $(this).find('.price').children().remove().end().text().replace(/(\r\n|\n|\r)/gm, '').trim(),
-                                "product_url" : $(this).find('.name').find('a').attr('href')
+                                "product_url": $(this).find('.name').find('a').attr('href')
                             });
                         });
                         if (!(categoryid in alldata)) {
@@ -81,8 +73,7 @@ function getValuePartsData() {
                         }
                         alldata[categoryid][id] = productdata;
 
-			//this is the debug function, you can comment it out if it is not required, #HANSITHA
-			printLoggedInUserName(html, 'for url '+url+' ');
+                        printLoggedInUserName(html, 'for url ' + url + ' ');
 
                         return resolve();
                     }
@@ -108,5 +99,4 @@ function getValuePartsData() {
     });
 }
 
-//Callling the main function, you can use this inside your as the entry point #HANSITHA
 LoginAndProceed();

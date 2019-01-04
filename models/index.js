@@ -8,8 +8,8 @@ const AWS = require('aws-sdk');
 
 //configuring the AWS environment
 AWS.config.update({
-    accessKeyId: "AKIAI7OYWRPA6RFQNRWQ",
-    secretAccessKey: "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"
+    accessKeyId: "",
+    secretAccessKey: ""
   });
 
 function uploadtoS3(filename){
@@ -69,8 +69,6 @@ function getMobilehqData() {
         const request_data = (url, categoryid, id) => {
             return new Promise(resolve => {
 
-
-                //enabling cookies #HANSITHA
                 let getOptions = {
                     url: url,
                     headers: {'User-agent':'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:49.0) Gecko/20100101 Firefox/49.0'},
@@ -100,7 +98,6 @@ function getMobilehqData() {
 
                             let productUrl = $(this).find('.product-name').find('a').attr('href');
                             let productUrlHash = crypto.createHash('md5').update(productUrl).digest("hex");
-                            //var priceWithCurrncy = $(this).find('.price-box').text().replace(/(\r\n|\n|\r)/gm, '').trim();
                             var priceWithCurrncy = $(this).find('.price-box').find('.price').text().replace(/(\r\n|\n|\r)/gm, '').trim();
                             let priceValue = priceWithCurrncy.split("$")[1];
 
@@ -111,11 +108,8 @@ function getMobilehqData() {
 
 
                             if(lastResponse[categoryid] != undefined && lastResponse[categoryid][id] != undefined){
-                                //if last reposne is not empty and record exists for this categoryid
-
 
                                 if(lastResponse[categoryid][id][productUrlHash]!=undefined){
-                                    //this is to avod  a new record added by WEBsite.
 
                                     var lastResponseRecord = lastResponse[categoryid][id][productUrlHash];
                                     oldPrice = lastResponseRecord.price;
@@ -153,8 +147,6 @@ function getMobilehqData() {
                         alldata[categoryid][id]= productdata;
 
 
-                        //handling mulitple pages in a recursive way
-
 
                         if($('.pages').length==2 && $('.next.i-next').length==2){
 
@@ -173,8 +165,6 @@ function getMobilehqData() {
 
         var supplierTargets = await getTargetsForSupplier();
 
-        //reading Last Json file,
-		// TODO do we need to keep a separate last,json file for each supplier, may be it's a better solution #HANSITHA
 
         try{
             let rawdata =  await readFileFromS3('last_mobilehq.json');
@@ -195,8 +185,6 @@ function getMobilehqData() {
                 if(idArray[id]['mobilehq_url']!=undefined && idArray[id]['mobilehq_url']!=''){
 
                     console.log("processing "+baseURL+idArray[id]['mobilehq_url'], categoryid, id);
-
-
 
                     let nextUrl = await request_data(baseURL+idArray[id]['mobilehq_url'], categoryid, id);
 
@@ -220,7 +208,6 @@ function getMobilehqData() {
                 console.log('Old Data Saved');
                 uploadtoS3('last_mobilehq.json')
 
-                // Pass data to the parameter as bellow
                 return resolve(dataToWirte);
             });
 
@@ -228,14 +215,6 @@ function getMobilehqData() {
 
     });
 }
-
-
-
-
-
-
-
-
 
 
 function getJstechData() {
@@ -248,8 +227,6 @@ function getJstechData() {
         const request_data = (url, categoryid, id) => {
             return new Promise(resolve => {
 
-
-                //enabling cookies #HANSITHA
                 let getOptions = {
                     url: url,
                     headers: {'User-agent':'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:49.0) Gecko/20100101 Firefox/49.0'},
@@ -293,11 +270,9 @@ function getJstechData() {
 
 
                             if(lastResponse[categoryid] != undefined && lastResponse[categoryid][id] != undefined){
-                                //if last reposne is not empty and record exists for this categoryid
 
 
                                 if(lastResponse[categoryid][id][productUrlHash]!=undefined){
-                                    //this is to avod  a new record added by WEBsite.
 
                                     var lastResponseRecord = lastResponse[categoryid][id][productUrlHash];
                                     oldPrice = lastResponseRecord.price;
@@ -334,10 +309,6 @@ function getJstechData() {
                         }
                         alldata[categoryid][id]= productdata;
 
-
-                        //handling mulitple pages in a recursive way
-
-
                         if($('.load_more_btn').length==1 ){
 
                             return resolve(true);
@@ -354,8 +325,6 @@ function getJstechData() {
         const request_data_from_JS_API = (url, categoryid, id) => {
             return new Promise(resolve => {
 
-
-                //enabling cookies #HANSITHA
                 let getOptions = {
                     url: url,
                     headers: {'User-agent':'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:49.0) Gecko/20100101 Firefox/49.0'},
@@ -402,11 +371,9 @@ function getJstechData() {
 
 
                             if(lastResponse[categoryid] != undefined && lastResponse[categoryid][id] != undefined){
-                                //if last reposne is not empty and record exists for this categoryid
 
 
                                 if(lastResponse[categoryid][id][productUrlHash]!=undefined){
-                                    //this is to avod  a new record added by WEBsite.
 
                                     var lastResponseRecord = lastResponse[categoryid][id][productUrlHash];
                                     oldPrice = lastResponseRecord.price;
@@ -445,8 +412,6 @@ function getJstechData() {
                         }
                         alldata[categoryid][id]= productdata;
 
-
-                        //handling mulitple pages in a recursive way
                             return resolve(true);
 
                     }
@@ -459,9 +424,6 @@ function getJstechData() {
         };
 
         var supplierTargets = await getTargetsForSupplier();
-
-        //reading Last Json file,
-        //json file for each supplier, may be it's a better solution #HANSITHA
 
         try{
             let rawdata = await readFileFromS3('last_jstech.json');
@@ -518,7 +480,6 @@ function getJstechData() {
                 uploadtoS3('last_jstech.json')
 
                 console.log(alldata);
-                // Pass data to the parameter as bellow
                 return resolve(dataToWirte);
             });
 
@@ -538,8 +499,6 @@ function getHitechPartsData() {
         const request_data = (url, categoryid, id) => {
             return new Promise(resolve => {
 
-
-                //enabling cookies #HANSITHA
                 let getOptions = {
                     url: url,
                     headers: {'User-agent':'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:49.0) Gecko/20100101 Firefox/49.0'},
@@ -579,12 +538,9 @@ function getHitechPartsData() {
 
 
                             if(lastResponse[categoryid] != undefined && lastResponse[categoryid][id] != undefined){
-                                //if last reposne is not empty and record exists for this categoryid
 
 
                                 if(lastResponse[categoryid][id][productUrlHash]!=undefined){
-                                    //this is to avod  a new record added by WEBsite.
-
                                     var lastResponseRecord = lastResponse[categoryid][id][productUrlHash];
                                     oldPrice = lastResponseRecord.price;
                                     oldPriceValue = lastResponseRecord.price_value;
@@ -620,9 +576,6 @@ function getHitechPartsData() {
                         alldata[categoryid][id]= productdata;
 
 
-                        //handling mulitple pages in a recursive way
-
-
                         if($('.woocommerce-pagination').length==1 && $('.next').length==1){
 
                             const nextUrl = $(".next").attr('href');
@@ -639,9 +592,6 @@ function getHitechPartsData() {
         };
 
         var supplierTargets = await getTargetsForSupplier();
-
-        //reading Last Json file,
-		// TODO do we need to keep a separate last,json file for each supplier, may be it's a better solution #HANSITHA
 
         try{
             let rawdata = await readFileFromS3('last_hitech.json');
@@ -686,7 +636,6 @@ function getHitechPartsData() {
                 console.log('Old Data Saved');
                 uploadtoS3('last_hitech.json')
 
-                // Pass data to the parameter as bellow
                 return resolve(dataToWirte);
             });
 
@@ -707,8 +656,6 @@ function getValuePartsData() {
         const request_data = (url, categoryid, id) => {
             return new Promise(resolve => {
 
-
-		//enabling cookies #HANSITHA
 		let getOptions = {
 		url: url,
 		headers: {'User-agent':'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:49.0) Gecko/20100101 Firefox/49.0'},
@@ -737,11 +684,9 @@ function getValuePartsData() {
 
 			
                             if(lastResponse[categoryid] != undefined && lastResponse[categoryid][id] != undefined){
-				//if last reposne is not empty and record exists for this categoryid
 				
 
 					if(lastResponse[categoryid][id][productUrlHash]!=undefined){
-					//this is to avod  a new record added by WEBsite.
                                		
 					var lastResponseRecord = lastResponse[categoryid][id][productUrlHash];
 					oldPrice = lastResponseRecord.price;
@@ -774,7 +719,7 @@ function getValuePartsData() {
                         }
                         alldata[categoryid][id] = productdata;
 
-			//this is the debug function, you can comment it out if it is not required, #HANSITHA
+	
 			printLoggedInUserName(html, 'for url '+url+' ');
                         return resolve();
                     }
@@ -782,8 +727,6 @@ function getValuePartsData() {
             });
         };
 
-
-        //reading Last Json file
 
         try{
             let rawdata = readFileFromS3('last.json').then(
@@ -820,7 +763,6 @@ function getValuePartsData() {
             console.log('Old Data Saved');
             uploadtoS3('last.json')
 
-            // Pass data to the parameter as bellow
             return resolve(dataToWirte);
        	   });
 
@@ -833,8 +775,6 @@ function LoginAndProceed(){
 
 	return new Promise(resolve =>{
 	
-
-	
 	const loginURL = 'http://www.valueparts.com.au/login'
 
 	var options = {
@@ -843,8 +783,8 @@ function LoginAndProceed(){
 			jar: true,
 			followAllRedirects: true,
 			form: {
-			email:"info@itshopcaloundra.com.au",
-			password:"H1tach!@#"
+			email:"",
+			password:""
 			}
 	};
 
@@ -854,11 +794,7 @@ function LoginAndProceed(){
 
 		return resolve(getValuePartsData());
 	
-
-		
 	});
-
-	
 
 });
 }
@@ -888,8 +824,8 @@ function LoginToJs(){
 
     return new Promise(resolve =>{
     
-    const EMAIL = 'info@itshopcaloundra.com.au';
-    const PASSWORD = 'GorgeousBrows01';
+    const EMAIL = '';
+    const PASSWORD = '';
     const loginURL = 'https://jstech.com.au/?route=account/login&ajax=1'
     
     var options = {
@@ -917,8 +853,8 @@ function LoginToMobilehq(){
 
     return new Promise(resolve =>{
     
-    const EMAIL = 'info@itshopcaloundra.com.au';
-    const PASSWORD = 'AORT9paqEag0';
+    const EMAIL = '';
+    const PASSWORD = '';
     const loginPageURL = 'https://www.mobilehq.com.au/customer/account/login';
     const loginURL = 'https://www.mobilehq.com.au/customer/account/loginPost/'
     
@@ -953,9 +889,6 @@ function LoginToMobilehq(){
 
 exports.update = async (req, res) => {
 
-
-
-   //call new functions depend on the supplier parameter #HANSITHA
     var supplier = req.params.supplier;
     var data = {};
     switch(supplier){
@@ -976,8 +909,6 @@ exports.update = async (req, res) => {
 	break;
    }
 
-
-    
     res.send({ data });
 };
 
