@@ -11,6 +11,9 @@ const ProductSchema = new Schema({
     product_url: {
         type: String
     },
+    url_hash: {
+        type: String
+    },
     product_category: {
         type: String
     },

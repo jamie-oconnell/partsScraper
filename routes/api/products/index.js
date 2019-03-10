@@ -2,9 +2,8 @@ const express = require("express");
 const router = express.Router();
 const Product = require("../../../models/Product");
 
-router.get("/:supplier", (req, res) => {
-    console.log(req.params);
-    Product.find({ supplier: req.params.supplier }).then(product => {
+router.get("/", (req, res) => {
+    Product.find({ supplier: req.query.supplier , product_category: req.query.category}).then(product => {
         res.json(product);
     });
 });

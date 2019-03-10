@@ -23,15 +23,12 @@ app.use(function(req, res, next) {
     next();
 });
 
-const supplierapi = require("./routes/api/supplier");
+const productsapi = require("./routes/api/products");
 const updateapi = require("./routes/api/update");
 
-app.use("/api/supplier", supplierapi);
+app.use("/api/products", productsapi);
 app.use("/api/update", updateapi);
 
-// const model = require("./models");
-// app.get("/api/update", model.update);
-// app.get("/api/update/:supplier", model.update);
 // app.get("/api/sources", sources);
 // app.get("/api/:supplier", supplier);
 // app.get("/api/:supplier/:category", supplierfilter);

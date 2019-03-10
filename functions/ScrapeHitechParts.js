@@ -1,5 +1,6 @@
 const request = require("request");
 const cheerio = require("cheerio");
+const crypto = require("crypto");
 
 const Product = require("../models/Product");
 const Source = require("../models/Source");
@@ -28,6 +29,20 @@ function getHitechPartsData() {
                 const allitems = $(".products-grid .item");
 
                 allitems.each(function() {
+                    const productUrl = $(this)
+                        .find(".item-title")
+                        .find("a")
+                        .attr("href");
+                    const urlHash = crypto
+                        .createHash("md5")
+                        .update(
+                            $(this)
+                                .find(".item-title")
+                                .find("a")
+                                .attr("href")
+                        )
+                        .digest("hex");
+
                     const product = {
                         product_name: $(this)
                             .find(".item-title")
@@ -36,10 +51,8 @@ function getHitechPartsData() {
                             .replace(/(\r\n|\n|\r)/gm, "")
                             .trim(),
                         product_category: categoryid,
-                        product_url: $(this)
-                            .find(".item-title")
-                            .find("a")
-                            .attr("href"),
+                        product_url: productUrl,
+                        url_hash: urlHash,
                         current_price: $(this)
                             .find(".price-box")
                             .text()
@@ -48,11 +61,14 @@ function getHitechPartsData() {
                         supplier: "hitechparts"
                     };
 
-                    Product.create(product, (err, product) => {
-                        if (err) {
-                            console.log(err);
-                        } else console.log(product);
-                    });
+                    Product.findOneAndUpdate({ url_hash: urlHash }, product, {
+                        upsert: true,
+                        returnNewDocument: true
+                    })
+                        .then(updatedDoc => {
+                            console.log(updatedDoc);
+                        })
+                        .catch(err => console.log(err));
                 });
 
                 if (
@@ -68,11 +84,8 @@ function getHitechPartsData() {
 
     Source.find()
         .then(result => {
-            for (i in result) {
-                request_data(
-                    baseURL + result[i].hitechparts_url,
-                    result[i].category
-                );
+            for (const item of result) {
+                request_data(baseURL + item.hitechparts_url, item.category);
             }
         })
         .catch(err => {
