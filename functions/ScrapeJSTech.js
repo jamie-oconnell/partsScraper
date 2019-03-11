@@ -216,3 +216,32 @@ function getJstechData() {
     
     
         }
+
+
+// function LoginToJs(){
+
+//     return new Promise(resolve =>{
+
+//     const EMAIL = '';
+//     const PASSWORD = '';
+//     const loginURL = 'https://jstech.com.au/?route=account/login&ajax=1'
+
+//     var options = {
+//     url: loginURL,
+//     headers: {'User-agent':'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:49.0) Gecko/20100101 Firefox/49.0'},
+//     jar: true,
+//     followAllRedirects: true,
+//     form: {
+//     email:EMAIL,
+//     password:PASSWORD
+//     }
+//     };
+
+//     request.post(options,function(error, response, body) {
+
+//     return resolve(getJstechData());
+
+//     });
+
+//     });
+// }

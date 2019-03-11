@@ -35,12 +35,7 @@ function getHitechPartsData() {
                         .attr("href");
                     const urlHash = crypto
                         .createHash("md5")
-                        .update(
-                            $(this)
-                                .find(".item-title")
-                                .find("a")
-                                .attr("href")
-                        )
+                        .update(productUrl)
                         .digest("hex");
 
                     const product = {
@@ -76,7 +71,7 @@ function getHitechPartsData() {
                     $(".next").length == 1
                 ) {
                     const nextUrl = $(".next").attr("href");
-                    return request_data(nextUrl);
+                    return request_data(nextUrl, categoryid);
                 }
             }
         });

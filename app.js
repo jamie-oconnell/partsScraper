@@ -1,4 +1,6 @@
 const express = require("express");
+
+// Connect to MonogDB
 const mongoose = require("mongoose");
 
 const db = require("./config/keys").mongoURI;
@@ -29,18 +31,10 @@ const updateapi = require("./routes/api/update");
 app.use("/api/products", productsapi);
 app.use("/api/update", updateapi);
 
-// app.get("/api/sources", sources);
-// app.get("/api/:supplier", supplier);
-// app.get("/api/:supplier/:category", supplierfilter);
-// app.get("/api/:supplier/:category/:id", supplierfilterspecific);
-
 var port = process.env.PORT || 3344;
 
-// start the server
+// Start Server
 const server = app.listen(port);
 console.log(`Server running on port ${port}`);
-
-// increase the timeout to 4 minutes
-server.timeout = 0;
 
 module.exports = app;

@@ -128,3 +128,41 @@ function getMobilehqData() {
 
     };
 
+
+
+    // function LoginToMobilehq(){
+
+//     return new Promise(resolve =>{
+
+//     const EMAIL = '';
+//     const PASSWORD = '';
+//     const loginPageURL = 'https://www.mobilehq.com.au/customer/account/login';
+//     const loginURL = 'https://www.mobilehq.com.au/customer/account/loginPost/'
+
+//     request.get(loginPageURL,function(error, response, body){
+
+// 	let $ = cheerio.load(body);
+// 	const formKey = $('input[name="form_key"]').attr('value');
+
+//         var options = {
+// 	    url: loginURL,
+// 	    headers: {'User-agent':'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:49.0) Gecko/20100101 Firefox/49.0'},
+// 	    jar: true,
+// 	    followAllRedirects: true,
+// 	    form: {
+// 	    login:{'username':EMAIL,'password':PASSWORD,'rememberme': "on"},
+// 	    send: "",
+// 	    form_key: formKey
+// 		 }
+// 	    };
+
+//       request.post(options,function(error, response, body) {
+
+//     	return resolve(getMobilehqData());
+
+//     	});
+
+//     });
+
+// });
+// }

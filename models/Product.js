@@ -19,7 +19,6 @@ const ProductSchema = new Schema({
     },
     supplier: {
         type: String
-        // required : true
     }
 });
 
