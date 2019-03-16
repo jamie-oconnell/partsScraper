@@ -2,6 +2,7 @@ const express = require("express");
 
 // Connect to MonogDB
 const mongoose = require("mongoose");
+mongoose.set("useFindAndModify", false);
 
 const db = require("./config/keys").mongoURI;
 

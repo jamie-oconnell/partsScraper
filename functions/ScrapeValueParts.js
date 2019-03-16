@@ -5,6 +5,8 @@ const crypto = require("crypto");
 const Product = require("../models/Product");
 const Source = require("../models/Source");
 
+const loginDetails = require("../config/keys").valuepartslogin;
+
 function getValuePartsData() {
     const baseURL = "http://www.valueparts.com.au/parts-by-model/";
 
@@ -76,30 +78,30 @@ function getValuePartsData() {
 
 module.exports = getValuePartsData;
 
-// function LoginAndProceed(){
+function Login() {
+    return new Promise(resolve => {
+        const loginURL = "http://www.valueparts.com.au/login";
 
-// 	return new Promise(resolve =>{
+        var options = {
+            url: loginURL,
+            headers: {
+                "User-agent":
+                    "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:49.0) Gecko/20100101 Firefox/49.0"
+            },
+            jar: true,
+            followAllRedirects: true,
+            form: {
+                email: loginDetails.email,
+                password: loginDetails.password
+            }
+        };
 
-// 	const loginURL = 'http://www.valueparts.com.au/login'
+        request.post(options, function(error, response, body) {
+            let $ = cheerio.load(body);
+            let loginDiv = $("#welcome");
+            console.log($(loginDiv).text() + "\n");
 
-// 	var options = {
-// 			url: loginURL,
-// 			headers: {'User-agent':'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:49.0) Gecko/20100101 Firefox/49.0'},
-// 			jar: true,
-// 			followAllRedirects: true,
-// 			form: {
-// 			email:"",
-// 			password:""
-// 			}
-// 	};
-
-// 	request.post(options,function(error, response, body) {
-
-// 		printLoggedInUserName(body,'1 ');
-
-// 		return resolve(getValuePartsData());
-
-// 	});
-
-// });
-// }
+            return resolve();
+        });
+    });
+}
