@@ -4,6 +4,7 @@ const crypto = require("crypto");
 
 const Product = require("../models/Product");
 const Source = require("../models/Source");
+const PriceHistory = require("../models/PriceHistory");
 
 async function getHitechPartsData() {
     console.log("Started Scraping");
@@ -35,56 +36,77 @@ async function getHitechPartsData() {
         };
 
         const process_data = (data, categoryid) => {
-            const $ = cheerio.load(data);
-            const allitems = $(".products-grid .item");
+            return new Promise(resolve => {
+                const $ = cheerio.load(data);
+                const allitems = $(".products-grid .item");
+                let nextUrl;
 
-            allitems.each(function() {
-                const productUrl = $(this)
-                    .find(".item-title")
-                    .find("a")
-                    .attr("href");
-                const urlHash = crypto
-                    .createHash("md5")
-                    .update(productUrl)
-                    .digest("hex");
-
-                const product = {
-                    product_name: $(this)
+                if (
+                    $(".woocommerce-pagination").length == 1 &&
+                    $(".next").length == 1
+                ) {
+                    nextUrl = $(".next").attr("href");
+                }
+                let newProducts = [];
+                allitems.each(function() {
+                    const productUrl = $(this)
                         .find(".item-title")
                         .find("a")
-                        .text()
-                        .replace(/(\r\n|\n|\r)/gm, "")
-                        .trim(),
-                    product_category: categoryid,
-                    product_url: productUrl,
-                    url_hash: urlHash,
-                    current_price: $(this)
-                        .find(".price-box")
-                        .text()
-                        .replace(/(\r\n|\n|\r)/gm, "")
-                        .trim(),
-                    supplier: "hitechparts"
-                };
+                        .attr("href");
+                    const urlHash = crypto
+                        .createHash("md5")
+                        .update(productUrl)
+                        .digest("hex");
 
-                Product.findOneAndUpdate({ url_hash: urlHash }, product, {
-                    upsert: true,
-                    returnNewDocument: true
-                })
-                    .then(result => {
-                        console.log(result);
-                    })
-                    .catch(err => console.log(err));
+                    const product = {
+                        product_name: $(this)
+                            .find(".item-title")
+                            .find("a")
+                            .text()
+                            .replace(/(\r\n|\n|\r)/gm, "")
+                            .trim(),
+                        product_category: categoryid,
+                        product_url: productUrl,
+                        url_hash: urlHash,
+                        current_price: $(this)
+                            .find(".price-box")
+                            .text()
+                            .replace(/(\r\n|\n|\r)/gm, "")
+                            .trim(),
+                        supplier: "hitechparts"
+                    };
+                    newProducts.push(product);
+                });
+                (async () => {
+                    for (product of newProducts) {
+                        let updatedDoc = await Product.findOneAndUpdate(
+                            { url_hash: product.url_hash },
+                            product,
+                            {
+                                upsert: true,
+                                returnNewDocument: true
+                            }
+                        );
+                        await PriceHistory.updateOne(
+                            { url_hash: product.url_hash },
+                            {
+                                url_hash: product.url_hash,
+                                product_name: product.product_name,
+                                $addToSet: {
+                                    priceHistory: {
+                                        date: Date.now(),
+                                        price: product.current_price
+                                    }
+                                }
+                            },
+                            {
+                                upsert: true
+                            }
+                        );
+                    }
+                    resolve(nextUrl);
+                })();
             });
-
-            let nextUrl;
-
-            if (
-                $(".woocommerce-pagination").length == 1 &&
-                $(".next").length == 1
-            ) {
-                nextUrl = $(".next").attr("href");
-            }
-            return nextUrl;
         };
 
         const scrape = async () => {
@@ -94,7 +116,7 @@ async function getHitechPartsData() {
                         for (const item of result) {
                             const go = async (url, categoryid) => {
                                 const data = await request_data(url);
-                                const processed_result = process_data(
+                                const processed_result = await process_data(
                                     data,
                                     categoryid
                                 );

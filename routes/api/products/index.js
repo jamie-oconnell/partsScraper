@@ -7,7 +7,8 @@ router.get("/", (req, res) => {
     Product.find({
         $or:[
         {supplier: req.query.supplier},
-        {product_category: req.query.category}]
+        {product_category: req.query.category},
+        {url_hash: req.query.hash}]
     }).then(product => {
         res.json(product);
     });
